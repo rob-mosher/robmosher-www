@@ -1,9 +1,20 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Oswald, Poppins } from 'next/font/google'
 import { ReactNode } from 'react'
+import { mergeClassName } from '@/lib'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const oswald = Oswald({
+  subsets: ['latin'],
+  variable: '--font-oswald',
+  weight: ['200', '300', '400', '500', '600', '700'],
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
@@ -17,7 +28,14 @@ const RootLayout = ({
     children: ReactNode;
   }>) => (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={mergeClassName(
+        oswald.variable,
+        poppins.variable,
+        'font-sans',
+      )}
+      >
+        {children}
+      </body>
     </html>
 )
 
