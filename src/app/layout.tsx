@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Oswald, Poppins } from 'next/font/google'
 import { ReactNode } from 'react'
-import { mergeClassName } from '@/lib'
 import './globals.css'
 
 const oswald = Oswald({
@@ -28,13 +27,10 @@ const RootLayout = ({
     children: ReactNode;
   }>) => (
     <html lang='en'>
-      <body className={mergeClassName(
-        oswald.variable,
-        poppins.variable,
-        'font-sans',
-      )}
-      >
-        {children}
+      <body className={`font-sans ${oswald.variable} ${poppins.variable}`}>
+        <div className='h-screen w-screen bg-stone-800'>
+          {children}
+        </div>
       </body>
     </html>
 )
