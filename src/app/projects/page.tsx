@@ -27,7 +27,7 @@ const Projects = () => {
   return (
     <>
       <Section>
-        <div className='flex flex-col sm:flex-row'>
+        <div className='flex flex-col md:flex-row'>
           <Heading className='flex-[40%]'>About</Heading>
           <p className='flex-[60%] leading-relaxed text-gray-700'>
             These projects represent the care, craft, and ridiculousness I love to bring to everything I do. I believe that inspiration, coupled with dedication and freedom from ego, lead to an endless, inevitable reshuffling, shaped by the beauty of limitation. The exploration of Science and Art is a privilege and duty that we collectively explore and share together.

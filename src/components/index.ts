@@ -1,4 +1,6 @@
 export * from './Button'
 export * from './Heading'
+export * from './PersonnelList'
 export * from './ProjectItem'
 export * from './Section'
+export * from './Video'

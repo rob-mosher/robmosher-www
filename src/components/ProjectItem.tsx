@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { TProjectItem } from '@types'
+import type { TProjectItem } from '@types'
 import { Heading } from './Heading'
 
 export const ProjectItem = ({

@@ -13,7 +13,7 @@ export const Section = ({
     className,
   )}
   >
-    <div className='flex w-full max-w-7xl px-4 py-12 text-black sm:px-12'>
+    <div className='flex w-full max-w-7xl px-4 py-12 text-black md:px-12'>
       {children}
     </div>
 
