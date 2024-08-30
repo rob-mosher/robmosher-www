@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-poppins)', 'sans-serif'],
+        heading: ['var(--font-oswald)', 'sans-serif'],
       },
     },
   },

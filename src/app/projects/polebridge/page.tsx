@@ -6,10 +6,10 @@ import { polebridgePersonnel } from '@data'
 const Polebridge = () => (
   <Section>
     <Video videoUrl='TODO-url-here'>
-      <Heading as='h2'>
+      <Heading as='h1'>
         Polebridge
       </Heading>
-      <Heading as='h3'>
+      <Heading as='h2'>
         &quot;Around the Bend&quot;
       </Heading>
       <PersonnelList list={polebridgePersonnel} />

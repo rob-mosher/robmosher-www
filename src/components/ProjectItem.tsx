@@ -19,7 +19,7 @@ export const ProjectItem = ({
       width={500}
       height={500}
     />
-    <Heading as='h5'>{title}</Heading>
+    <Heading as='h4'>{title}</Heading>
 
   </Link>
 )

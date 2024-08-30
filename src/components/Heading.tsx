@@ -24,14 +24,12 @@ export const Heading = ({
   <div
     className={mergeClassName(
       'mb-3 font-extralight tracking-tight',
-      'h-auto', // needed for `scale-y-[...]` below
       className,
       uppercase && 'uppercase',
       headingStyles[as],
     )}
   >
-    {/* TODO research if/why `flex` is needed below */}
-    <span className='flex scale-y-125'>
+    <span className='font-heading'>
       {children}
     </span>
   </div>
