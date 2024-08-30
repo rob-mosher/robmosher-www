@@ -11,10 +11,7 @@ export const PersonnelList = ({
     // eslint-disable-next-line react/no-array-index-key
     <li key={i}>
       {person.name}
-      {' '}
-      {delimiter}
-      {' '}
-      {person.role}
+      {person.role && ` ${delimiter} ${person.role}`}
     </li>
   ))
 
