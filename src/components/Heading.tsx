@@ -20,18 +20,20 @@ export const Heading = ({
   children: ReactNode
   className?: string
   uppercase?: boolean
-}) => (
-  <div
-    className={mergeClassName(
-      'mb-3 font-extralight tracking-tight',
-      className,
-      uppercase && 'uppercase',
-      headingStyles[as],
-    )}
-  >
-    <span className='font-heading'>
-      {children}
-    </span>
-  </div>
+}) => {
+  const HeadingTag = as
 
-)
+  return (
+    <HeadingTag
+      className={mergeClassName(
+        'mb-3 font-extralight font-heading tracking-tight',
+        uppercase && 'uppercase',
+        headingStyles[as],
+        className,
+      )}
+    >
+      {children}
+    </HeadingTag>
+
+  )
+}
