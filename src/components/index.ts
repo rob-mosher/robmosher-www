@@ -1,4 +1,5 @@
 export * from './Button'
+export * from './Footer'
 export * from './Heading'
 export * from './PersonnelList'
 export * from './ProjectItem'
