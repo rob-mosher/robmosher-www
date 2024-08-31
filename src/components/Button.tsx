@@ -1,9 +1,9 @@
-import { ReactNode } from 'react'
+import type { ReactNode as TReactNode } from 'react'
 
 export const Button = ({
   children,
 }: {
-  children: ReactNode
+  children: TReactNode
 }) => (
   <button
     className='rounded bg-stone-300 px-4 py-2'

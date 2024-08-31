@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode as TReactNode } from 'react'
 import { mergeClassName } from '@lib'
 
 const headingStyles = {
@@ -17,7 +17,7 @@ export const Heading = ({
   uppercase = true,
 }: {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-  children: ReactNode
+  children: TReactNode
   className?: string
   uppercase?: boolean
 }) => {

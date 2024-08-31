@@ -1,10 +1,10 @@
-import { ReactNode } from 'react'
+import type { ReactNode as TReactNode } from 'react'
 
 export const Video = ({
   children,
   videoUrl,
 }: {
-  children: ReactNode
+  children: TReactNode
   videoUrl: string
 }) => {
   console.log('videoUrl', videoUrl)

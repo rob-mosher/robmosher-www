@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Oswald, Poppins } from 'next/font/google'
-import { ReactNode } from 'react'
+import type { ReactNode as TReactNode } from 'react'
 import { Footer } from '@components'
 import './globals.css'
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const RootLayout = ({
   children,
 }: Readonly<{
-    children: ReactNode;
+    children: TReactNode;
   }>) => (
     <html lang='en'>
       <body className={`font-sans font-light ${oswald.variable} ${poppins.variable}`}>

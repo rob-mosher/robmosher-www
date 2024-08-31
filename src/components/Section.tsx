@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode as TReactNode } from 'react'
 import { mergeClassName } from '@lib'
 
 export const Section = ({
@@ -6,7 +6,7 @@ export const Section = ({
   className = '',
   classNameWrapper = '',
 }: {
-  children: ReactNode
+  children: TReactNode
   className?: string
   classNameWrapper?: string
 }) => (
