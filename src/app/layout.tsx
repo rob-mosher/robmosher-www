@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Oswald, Poppins } from 'next/font/google'
 import type { ReactNode as TReactNode } from 'react'
-import { Footer } from '@components'
+import { Footer, Header } from '@components'
 import './globals.css'
 
 const oswald = Oswald({
@@ -29,8 +29,11 @@ const RootLayout = ({
   }>) => (
     <html lang='en'>
       <body className={`font-sans font-light ${oswald.variable} ${poppins.variable}`}>
-        <div className='h-screen w-screen bg-stone-800'>
-          {children}
+        <div className='flex size-full flex-col'>
+          <Header />
+          <main>
+            {children}
+          </main>
           <Footer />
         </div>
       </body>

@@ -14,11 +14,13 @@ export const Heading = ({
   as = 'h2',
   children,
   className = '',
+  noShrink = false,
   uppercase = true,
 }: {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   children: TReactNode
   className?: string
+  noShrink?: boolean
   uppercase?: boolean
 }) => {
   const HeadingTag = as
@@ -26,7 +28,8 @@ export const Heading = ({
   return (
     <HeadingTag
       className={mergeClassName(
-        'mb-3 font-extralight font-heading tracking-tight',
+        'mb-3 font-extralight font-title tracking-tight',
+        noShrink && 'shrink-0',
         uppercase && 'uppercase',
         headingStyles[as],
         className,
