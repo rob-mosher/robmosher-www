@@ -1,4 +1,5 @@
 export * from './Button'
+export * from './CurlyQuotes'
 export * from './Footer'
 export * from './Header'
 export * from './Heading'

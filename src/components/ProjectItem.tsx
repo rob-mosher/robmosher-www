@@ -8,7 +8,7 @@ export const ProjectItem = ({
   src,
   title,
   href,
-}: TProjectItem) => (
+}: Omit<TProjectItem, 'id'>) => (
   <Link
     className='flex flex-col items-center space-y-4'
     href={href}

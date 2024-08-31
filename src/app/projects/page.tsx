@@ -1,23 +1,12 @@
 /* eslint-disable max-len */
 
 import { Heading, ProjectItem, Section } from '@components'
-import { TProjectItem } from '@types'
+import { projects } from './data'
 
 const Projects = () => {
-  const projects: TProjectItem[] = new Array(7).fill(
-    {
-      alt: 'Polebridge',
-      href: '/projects/polebridge',
-      src: '/images/polebridge.png',
-      title: 'Polebridge',
-    },
-  )
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const projectsJSX: any = projects.map((project, index) => (
+  const projectsJSX = projects.map((project) => (
     <ProjectItem
-      // eslint-disable-next-line react/no-array-index-key
-      key={`project-item-${index}`}
+      key={project.id}
       alt={project.alt}
       href={project.href}
       src={project.src}
@@ -26,7 +15,7 @@ const Projects = () => {
   ))
   return (
     <>
-      <Section>
+      <Section outerClassName='bg-white'>
         <div className='flex flex-col md:flex-row'>
           <Heading className='flex-[40%]' as='h1'>About</Heading>
           <p className='flex-[60%] leading-relaxed text-gray-700'>
@@ -34,13 +23,12 @@ const Projects = () => {
           </p>
         </div>
       </Section>
-      <Section classNameWrapper='bg-gray-200'>
+      <Section outerClassName='bg-gray-200'>
         <div className='grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>
           {projectsJSX}
         </div>
       </Section>
     </>
-
   )
 }
 export default Projects

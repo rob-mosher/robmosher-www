@@ -1,11 +1,9 @@
-import { Button, Section } from '@components'
+import { Section } from '@components'
 
 const Home = () => (
-  <>
-    <h1>Homepage</h1>
-    <Button>Button Component</Button>
-    <Section>Section content</Section>
-  </>
+  <Section>
+    Homepage
+  </Section>
 )
 
 export default Home

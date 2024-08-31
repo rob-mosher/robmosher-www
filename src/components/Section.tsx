@@ -4,24 +4,24 @@ import { mergeClassName } from '@lib'
 export const Section = ({
   children,
   className = '',
-  classNameWrapper = '',
+  outerClassName = '',
 }: {
   children: TReactNode
   className?: string
-  classNameWrapper?: string
+  outerClassName?: string
 }) => (
   <div className={mergeClassName(
     'flex w-full justify-center bg-white',
-    classNameWrapper,
+    outerClassName,
   )}
   >
-    <div className={mergeClassName(
-      'flex w-full max-w-7xl px-4 py-12 text-black md:px-12',
+    <section className={mergeClassName(
+      'flex w-full max-w-7xl px-6 py-12 text-black md:px-12',
       className,
     )}
     >
       {children}
-    </div>
+    </section>
 
   </div>
 )
