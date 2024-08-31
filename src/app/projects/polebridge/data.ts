@@ -1,4 +1,4 @@
-import type { TPersonnelListItem } from '@types'
+import type { TPersonnelListItem, TVideoItem } from '@types'
 
 export const polebridgePersonnel: TPersonnelListItem[] = [
   {
@@ -27,3 +27,12 @@ export const polebridgePersonnel: TPersonnelListItem[] = [
     role: 'acoustic bass',
   },
 ]
+
+export const videos: Record<string, TVideoItem> = {
+  aroundTheBend: {
+    id: 'video-polebridge-around-the-bend',
+    alt: 'Video of Around the Bend',
+    thumbnail: '/images/video-thumbnails/polebridge-around-the-bend.jpg',
+    url: 'https://www.youtube.com/watch?v=COI1kaomKp0',
+  },
+}

@@ -1,11 +1,11 @@
 import {
   Button, CurlyQuotes, Heading, PersonnelList, Section, Video,
 } from '@components'
-import { polebridgePersonnel } from './data'
+import { polebridgePersonnel, videos } from './data'
 
 const Polebridge = () => (
   <Section>
-    <Video videoUrl='TODO-url-here'>
+    <Video video={videos.aroundTheBend}>
       <Heading as='h2'>
         Polebridge
       </Heading>
