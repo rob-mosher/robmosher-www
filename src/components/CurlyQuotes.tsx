@@ -1,4 +1,7 @@
 import type { ReactNode as TReactNode } from 'react'
+import {
+  leftSingleQuote, leftDoubleQuote, rightSingleQuote, rightDoubleQuote,
+} from '@lib'
 
 export const CurlyQuotes = ({
   children,
@@ -7,14 +10,6 @@ export const CurlyQuotes = ({
 {
   children: TReactNode
   useSingle?: boolean
-}) => {
-  const leftSingleQuote = '\u2018'
-  const leftDoubleQuote = '\u201C'
-
-  const rightSingleQuote = '\u2019'
-  const rightDoubleQuote = '\u201D'
-
-  return useSingle
-    ? `${leftSingleQuote}${children}${rightSingleQuote}`
-    : `${leftDoubleQuote}${children}${rightDoubleQuote}`
-}
+}) => (useSingle
+  ? `${leftSingleQuote}${children}${rightSingleQuote}`
+  : `${leftDoubleQuote}${children}${rightDoubleQuote}`)
