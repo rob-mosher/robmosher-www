@@ -29,7 +29,7 @@ export const Maillist = () => {
     >
       <Heading as='h2'>Subscribe</Heading>
       <p className='text-center'>
-        Sign up with your email address to receive news and updates. I typically send something every 4-6 weeks.
+        Sign up with your email address to receive news and updates. I typically send something every 6-8 weeks.
       </p>
       {signupForm}
     </section>

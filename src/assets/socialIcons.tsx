@@ -1,6 +1,8 @@
 export const FacebookIcon = () => (
   // !Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
   <svg
+    width='32'
+    height='32'
     fill='currentColor'
     viewBox='0 0 512 512'
     xmlns='http://www.w3.org/2000/svg'
@@ -12,6 +14,8 @@ export const FacebookIcon = () => (
 export const GitHubIcon = () => (
   // !Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
   <svg
+    width='32'
+    height='32'
     fill='currentColor'
     viewBox='0 0 496 512'
     xmlns='http://www.w3.org/2000/svg'
@@ -23,6 +27,8 @@ export const GitHubIcon = () => (
 export const LinkedInIcon = () => (
   // !Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
   <svg
+    width='32'
+    height='32'
     fill='currentColor'
     viewBox='0 0 448 512'
     xmlns='http://www.w3.org/2000/svg'
@@ -34,6 +40,8 @@ export const LinkedInIcon = () => (
 export const YouTubeIcon = () => (
   // !Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
   <svg
+    width='32'
+    height='32'
     fill='currentColor'
     viewBox='0 0 576 512'
     xmlns='http://www.w3.org/2000/svg'
