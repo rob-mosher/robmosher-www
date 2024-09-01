@@ -1,6 +1,6 @@
 import type { ReactNode as TReactNode } from 'react'
 
-export interface TSocialMediaItem {
+export interface TSocialMedia {
   id: string
   ariaLabel: string
   href: string

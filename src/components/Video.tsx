@@ -8,14 +8,14 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import type { ReactNode as TReactNode } from 'react'
 import ReactPlayer from 'react-player'
-import type { TVideoItem } from '@types'
+import type { TVideo } from '@types'
 
 export const Video = ({
   children,
   video,
 }: {
   children: TReactNode
-  video: TVideoItem
+  video: TVideo
 }) => {
   const [isMounted, setIsMounted] = useState(false)
 

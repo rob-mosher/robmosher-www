@@ -1,6 +1,6 @@
-import type { TProjectItem } from '@types'
+import type { TProject } from '@types'
 
-export const projects: TProjectItem[] = new Array(7).fill(
+export const projects: TProject[] = new Array(7).fill(
   {
     id: 'project-item-polebridge',
     alt: 'Polebridge',

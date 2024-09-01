@@ -1,4 +1,4 @@
-export interface TProjectItem {
+export interface TProject {
   id: string
   alt: string
   src: string

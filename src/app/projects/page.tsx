@@ -1,11 +1,11 @@
 /* eslint-disable max-len */
 
-import { Heading, ProjectItem, Section } from '@components'
+import { Heading, Project, Section } from '@components'
 import { projects } from './data'
 
 const Projects = () => {
   const projectsJSX = projects.map((project) => (
-    <ProjectItem
+    <Project
       key={project.id}
       alt={project.alt}
       href={project.href}

@@ -1,4 +1,4 @@
-export interface TPersonnelListItem {
+export interface TPersonnel {
   id: string
   name: string
   role?: string

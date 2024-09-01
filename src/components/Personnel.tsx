@@ -1,11 +1,11 @@
-import type { TPersonnelListItem } from '@types'
+import type { TPersonnel } from '@types'
 
-export const PersonnelList = ({
+export const Personnel = ({
   delimiter = '\u2014', // an emdash (aka wide hyphen)
   list,
 }: {
   delimiter?: string
-  list: TPersonnelListItem[]
+  list: TPersonnel[]
 }) => {
   const personnelList = list.map((person) => (
     <li key={person.id}>

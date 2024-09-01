@@ -1,9 +1,9 @@
 import {
   FacebookIcon, GitHubIcon, LinkedInIcon, YouTubeIcon,
 } from '@assets'
-import type { TSocialMediaItem } from '../../types/socialMediaItem'
+import type { TSocialMedia } from '../../types/socialMedia'
 
-export const socialMediaItems: TSocialMediaItem[] = [
+export const socialMediaItems: TSocialMedia[] = [
   {
     id: 'social-media-item-youtube',
     ariaLabel: 'YouTube Channel',

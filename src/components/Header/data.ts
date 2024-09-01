@@ -1,6 +1,6 @@
-import type { TNavItem } from '@types'
+import type { TNav } from '@types'
 
-export const navItems: TNavItem[] = [
+export const navItems: TNav[] = [
   {
     id: 'navitem-home',
     href: '/',
