@@ -33,7 +33,7 @@ export const Nav = () => {
       >
         X
       </button>
-      <div className='hidden gap-6 md:flex'>
+      <div className='hidden gap-6 font-title text-xl uppercase md:flex'>
         { navJSX }
       </div>
     </nav>

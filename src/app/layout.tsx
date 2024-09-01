@@ -28,7 +28,7 @@ const RootLayout = ({
     children: TReactNode;
   }>) => (
     <html lang='en'>
-      <body className={`font-sans font-light ${oswald.variable} ${poppins.variable}`}>
+      <body className={`font-sans font-extralight ${oswald.variable} ${poppins.variable}`}>
         <div className='flex size-full flex-col'>
           <Header />
           <main>
