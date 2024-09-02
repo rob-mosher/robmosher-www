@@ -8,9 +8,10 @@ import Image from 'next/image'
 import type { ReactNode as TReactNode } from 'react'
 import { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player'
+import type { ReactPlayerProps as TReactPlayerProps } from 'react-player'
 import type { TVideo } from '@types'
-import { CurlyQuotes } from './CurlyQuotes'
 import { Heading } from './Heading'
+import { Loader } from './Loader'
 import { Personnel } from './Personnel'
 
 export const Video = ({
@@ -27,7 +28,7 @@ export const Video = ({
   }, [])
 
   const description = video.description
-    ? <div className='mt-4'>{video.description}</div>
+    ? <div className='mt-4 text-gray-500'>{video.description}</div>
     : null
   const personnel = video.personnel
     ? <Personnel list={video.personnel} />
@@ -36,28 +37,34 @@ export const Video = ({
     ? <Heading as='h4' className='text-gray-700'>{video.subTitle}</Heading>
     : null
 
+  const reactPlayerProps: TReactPlayerProps = {
+    url: video.videoUrl,
+    controls: !video.hideControls, // Show controls by default
+    height: 'fit-content',
+    width: 'fit-content',
+    light: video.thumbnailSrc
+      ? (
+        <Image
+          alt={video.alt ?? 'Video Thumbnail'}
+          src={video.thumbnailSrc}
+          width={800}
+          height={450}
+        />
+      ) : false,
+  }
+
   return (
     <div className='flex w-full flex-col gap-6 md:flex-row md:gap-9'>
-      <div className='flex size-full flex-[50%] bg-gray-700'>
-        {isMounted && (
-          <ReactPlayer
-            controls={video.showControls !== false} // Show by default (even if undefined)
-            light={video.thumbnailSrc
-              ? (
-                <Image
-                  alt={video.alt ?? 'Video Thumbnail'}
-                  src={video.thumbnailSrc}
-                  width={800}
-                  height={450}
-                />
-              ) : false}
-            url={video.videoUrl}
-          />
-        )}
+      <div className='flex size-full flex-[65%]'>
+        {isMounted ? (
+          <ReactPlayer {...reactPlayerProps} />
+        ) : (
+          <Loader />
+        ) }
       </div>
-      <div className='flex-[50%]'>
+      <div className='flex-[35%]'>
         <Heading as='h2'>
-          <CurlyQuotes>{video.title}</CurlyQuotes>
+          {video.title}
         </Heading>
         {subTitle}
         {personnel}

@@ -16,7 +16,7 @@ export const Section = ({
   )}
   >
     <section className={mergeClassName(
-      'flex w-full max-w-7xl px-6 py-12 text-black md:px-12',
+      'flex flex-col w-full max-w-7xl px-6 py-12 text-black md:px-12',
       className,
     )}
     >

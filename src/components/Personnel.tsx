@@ -12,10 +12,7 @@ export const Personnel = ({
       {person.name}
       {person.role && (
         <span className='ml-1 font-title text-base font-thin uppercase tracking-wide text-gray-500'>
-            {' '}
-            {delimiter}
-            {' '}
-            {person.role}
+          {` ${delimiter} ${person.role}`}
         </span>
       )}
     </li>

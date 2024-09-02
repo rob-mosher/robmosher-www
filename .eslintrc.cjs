@@ -78,6 +78,7 @@ module.exports = {
         extensions: ['.jsx', '.tsx'],
       },
     ],
+    'react/jsx-props-no-spreading': 'off',
     'react/prop-types': ['off'],
     'react-refresh/only-export-components': [
       'warn',

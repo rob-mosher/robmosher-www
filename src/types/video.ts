@@ -6,7 +6,7 @@ export interface TVideo {
   alt: string
   description?: string | ReactNode
   personnel?: TPersonnel[]
-  showControls?: boolean
+  hideControls?: boolean
   subTitle?: string
   thumbnailSrc?: string
   title: string
