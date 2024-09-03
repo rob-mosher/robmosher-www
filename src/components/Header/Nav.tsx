@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation'
 import { mergeClassName } from '@lib'
 import { navItems } from './data'
 
+// TODO integrate matchesPath and normalizedPath
+
 export const Nav = () => {
   const pathName = usePathname()
   const isActive = (path: string) => path === pathName
@@ -13,7 +15,7 @@ export const Nav = () => {
     <Link
       key={navItem.id}
       className={mergeClassName(
-        'py-1 text-gray-500',
+        'py-1 text-gray-500 text-1.5xl',
         isActive(navItem.href) ? 'border-b-2 border-black text-black' : '',
       )}
       href={navItem.href}
@@ -21,8 +23,6 @@ export const Nav = () => {
       {navItem.title}
     </Link>
   ))
-
-  console.log(pathName)
 
   return (
     <nav>

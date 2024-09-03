@@ -18,6 +18,9 @@ const config: Config = {
         sans: ['var(--font-poppins)', 'sans-serif'],
         title: ['var(--font-oswald)', 'sans-serif'],
       },
+      fontSize: {
+        '1.5xl': ['1.375rem', { lineHeight: '1.875rem' }], // 22px font size, 30px line height
+      },
       maxWidth: {
         layout: '1600px',
       },
