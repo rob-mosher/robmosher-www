@@ -16,7 +16,7 @@ export const Maillist = () => {
       {/* <input type='text' name='email_address_check' value='' /> */}
       <input type='hidden' name='locale' value='en' />
       <input type='hidden' name='html_type' value='simple' />
-      <Button className='w-64 bg-teal-600 px-3 py-4 text-white'>
+      <Button className='w-64 bg-bright px-3 py-4 text-white'>
         Sign Me Up
       </Button>
     </form>

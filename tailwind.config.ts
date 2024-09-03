@@ -8,9 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        bright: '#0896A6',
+      },
       fontFamily: {
         sans: ['var(--font-poppins)', 'sans-serif'],
         title: ['var(--font-oswald)', 'sans-serif'],
+      },
+      maxWidth: {
+        layout: '1600px',
       },
     },
   },
