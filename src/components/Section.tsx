@@ -2,15 +2,29 @@ import type { ElementType as TElementType, ReactNode as TReactNode } from 'react
 import { createElement } from 'react'
 import { mergeClassName } from '@lib'
 
+type TTheme = 'lightest' | 'light' | 'bright' | 'dark' | 'darkest'
+
+const getThemeClassName = (theme: TTheme) => {
+  switch (theme) {
+    case 'bright':
+      return 'bg-bright text-white'
+
+    default:
+      return 'bg-white text-black'
+  }
+}
+
 export const Section = ({
   as = 'section',
   children,
   className = '',
+  theme = 'lightest',
   outerClassName = '',
 }: {
   as?: TElementType
   children: TReactNode
   className?: string
+  theme?: TTheme
   outerClassName?: string
 }) => {
   const elementTag = as
@@ -19,6 +33,7 @@ export const Section = ({
 
     <div className={mergeClassName(
       'flex w-full justify-center',
+      getThemeClassName(theme),
       outerClassName,
     )}
     >

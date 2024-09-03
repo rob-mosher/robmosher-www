@@ -8,13 +8,13 @@ const Videos = () => (
     <Section>
       <Video video={aroundTheBend} />
     </Section>
-    <Section outerClassName='bg-indigo-800 text-white'>
+    <Section theme='bright'>
       <Video video={concertoForOboe} />
     </Section>
     <Section>
       <Video video={whoIsTheCutest} />
     </Section>
-    <Section>
+    <Section theme='bright'>
       <Video video={rangosTango}>
         <Button className='mt-9'>
           View Project

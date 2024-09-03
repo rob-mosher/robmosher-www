@@ -1,4 +1,5 @@
 export * from './aroundTheBend'
+export * from './bigTop'
 export * from './concertoForOboe'
 export * from './meetTheMusic'
 export * from './rangosTango'
