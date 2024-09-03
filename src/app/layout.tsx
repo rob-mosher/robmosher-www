@@ -29,9 +29,9 @@ const RootLayout = ({
   }>) => (
     <html lang='en'>
       <body className={`font-sans font-extralight ${oswald.variable} ${poppins.variable}`}>
-        <div className='flex size-full flex-col'>
+        <div className='flex size-full min-h-screen flex-col'>
           <Header />
-          <main>
+          <main className='flex grow flex-col'>
             {children}
           </main>
           <Footer />
