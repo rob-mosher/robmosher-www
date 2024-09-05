@@ -16,7 +16,9 @@ export const Nav = () => {
       key={navItem.id}
       className={mergeClassName(
         'py-1 text-gray-500 text-1.5xl',
-        isActive(navItem.href) ? 'border-b-2 border-black text-black' : '',
+        isActive(navItem.href)
+          ? 'border-b-2 border-black text-black'
+          : 'hover:text-black',
       )}
       href={navItem.href}
     >
