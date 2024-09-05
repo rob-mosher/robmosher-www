@@ -1,25 +1,25 @@
+import { ReactNode } from 'react'
 import { Heading } from '@components'
-// import { rightSingleQuote } from '@lib'
 import type { TVideo } from '@types'
 
-const descriptionJSX = (
-  <div>
+const descriptionJSX: ReactNode = (
+  <>
     <p>Composed, performed, and recorded by Rob Mosher.</p>
-    <p>Image created by DALL-E from OpenAI.</p>
-    <Heading as='h4'>LYRICS</Heading>
+    <p className='mt-4 italic'>Image created by DALL-E from OpenAI.</p>
+    <Heading as='h4' className='mt-6'>LYRICS</Heading>
     <p>
       All the things you do,
       <br />
       I&lsquo;m in love with you.
     </p>
-  </div>
+  </>
 )
 
 export const bigTop: TVideo = {
   id: 'video--big-top',
-  alt: 'Play video of Big Top',
   description: descriptionJSX,
+  imageAlt: 'Play video of Big Top',
+  imageSrc: '/images/video-thumbnails/carousel-big-top.png',
   title: 'Big Top',
-  thumbnailSrc: '/images/video-thumbnails/carousel-big-top.png',
   videoUrl: 'https://www.youtube.com/watch?v=bfza7juxe3g',
 }

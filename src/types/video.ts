@@ -3,12 +3,14 @@ import { TPersonnel } from './personnel'
 
 export interface TVideo {
   id: string
-  alt: string
+  date?: string
   description?: string | ReactNode
-  personnel?: TPersonnel[]
   hideControls?: boolean
+  imageAlt: string
+  imageSrc: string
+  personnel?: TPersonnel[]
+  slug?: string
   subTitle?: string
-  thumbnailSrc?: string
   title: string
   videoUrl: string
 }

@@ -1,10 +1,26 @@
 import { BlogPreview } from '@components'
-import { blogPreviews } from './data'
+import {
+  battlesEnd,
+  mrHauntingtrope,
+  pancakeDaydreams,
+  watchOutForTheMoonlight,
+  winterCarousel,
+} from '@data'
+import type { TVideo } from '@types'
+
+// Newer blog entries on top.
+const blogPreviews: TVideo[] = [
+  winterCarousel,
+  mrHauntingtrope,
+  watchOutForTheMoonlight,
+  battlesEnd,
+  pancakeDaydreams,
+]
 
 const New = () => {
-  const blogPreviewJSX = blogPreviews.map((blogPreview, index) => (
+  const blogPreviewsJSX = blogPreviews.map((blogPreview, index) => (
     <BlogPreview
-      key={blogPreview.key}
+      key={blogPreview.id}
       blogPreview={blogPreview}
       // Alternate between themes (aka zebra striping)
       theme={index % 2 === 0 ? 'bright' : undefined}
@@ -14,7 +30,7 @@ const New = () => {
   return (
     // Semantic `section`s are handled within each blog preview
     <div>
-      {blogPreviewJSX}
+      {blogPreviewsJSX}
     </div>
   )
 }

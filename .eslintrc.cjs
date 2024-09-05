@@ -65,6 +65,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'jsx-a11y/label-has-associated-control': ['warn'],
     'jsx-quotes': ['error', 'prefer-single'],
+    'max-len': 'warn',
     'react/function-component-definition': [
       'error',
       {

@@ -1,10 +1,10 @@
 import { Section, Video } from '@components'
 import { battlesEnd } from '@data'
 
-const blogBattlesEnd = () => (
+const BattlesEnd = () => (
   <Section>
     <Video video={battlesEnd} />
   </Section>
 )
 
-export default blogBattlesEnd
+export default BattlesEnd

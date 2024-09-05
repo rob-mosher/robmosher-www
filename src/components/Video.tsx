@@ -46,11 +46,11 @@ export const Video = ({
     controls: !video.hideControls, // Show controls by default
     height: 'fit-content',
     width: 'fit-content',
-    light: video.thumbnailSrc
+    light: video.imageSrc
       ? (
         <Image
-          alt={video.alt ?? 'Video Thumbnail'}
-          src={video.thumbnailSrc}
+          alt={video.imageAlt ?? 'Video Thumbnail'}
+          src={video.imageSrc}
           width={1600}
           height={900}
         />

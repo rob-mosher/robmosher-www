@@ -3,7 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import type { TBlogPreview, TTheme } from '@types'
+import { Calendar } from '@assets'
+import type { TVideo, TTheme } from '@types'
 import { Heading } from './Heading'
 import { Section } from './Section'
 
@@ -11,7 +12,7 @@ export const BlogPreview = ({
   blogPreview,
   theme,
 }: {
-  blogPreview: TBlogPreview
+  blogPreview: TVideo
   theme?: TTheme
 }) => {
   const router = useRouter()
@@ -19,12 +20,20 @@ export const BlogPreview = ({
 
   const handleClick = () => router.push(blogPath)
 
+  const date = blogPreview.date
+    ? (
+      <div className='flex items-center justify-start gap-2 opacity-40'>
+        <Calendar />
+        {blogPreview.date}
+      </div>
+    ) : null
+
   return (
     <Section
-      className='flex flex-row gap-9 py-9'
+      className='flex flex-col gap-9 py-9 md:flex-row-reverse'
       theme={theme}
     >
-      <div className='flex-[40%]'>
+      <div className='flex-[50%]'>
         <Image
           alt={blogPreview.imageAlt}
           className='w-full cursor-pointer hover:opacity-75'
@@ -34,17 +43,15 @@ export const BlogPreview = ({
           onClick={handleClick}
         />
       </div>
-      <div className='flex flex-[60%] flex-col'>
+      <div className='flex flex-[50%] flex-col'>
         <Heading>
           <Link href={blogPath} className='hover:underline hover:opacity-75'>
             {blogPreview.title}
           </Link>
         </Heading>
-        <p className='opacity-70'>
-          {blogPreview.date}
-        </p>
+        {date}
         <p className='mt-4 text-lg'>
-          {blogPreview.body}
+          {blogPreview.subTitle && `${blogPreview.subTitle}.`}
         </p>
         <Link
           className='mt-9 tracking-wide underline hover:opacity-75'

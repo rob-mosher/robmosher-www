@@ -1,4 +1,3 @@
-export * from './blogPreview'
 export * from './nav'
 export * from './theme'
 export * from './personnel'

@@ -30,10 +30,10 @@ const personnel = [
 
 export const concertoForOboe: TVideo = {
   id: 'video--concerto-for-oboe',
-  alt: 'Play video of Concerto for Oboe',
   description: 'Film and Lighting by Ryan Gates.',
+  imageAlt: 'Play video of Concerto for Oboe',
+  imageSrc: '/images/video-thumbnails/concerto-for-oboe.jpg',
   personnel,
   title: 'Concerto for Oboe',
-  thumbnailSrc: '/images/video-thumbnails/concerto-for-oboe.jpg',
   videoUrl: 'https://www.youtube.com/watch?v=LWP9XBz7XM0',
 }
