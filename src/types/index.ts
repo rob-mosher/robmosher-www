@@ -1,4 +1,6 @@
+export * from './blogPreview'
 export * from './nav'
+export * from './theme'
 export * from './personnel'
 export * from './project'
 export * from './video'

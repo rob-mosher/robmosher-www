@@ -1,8 +1,7 @@
 import type { ElementType as TElementType, ReactNode as TReactNode } from 'react'
 import { createElement } from 'react'
 import { mergeClassName } from '@lib'
-
-type TTheme = 'lightest' | 'light' | 'bright' | 'dark' | 'darkest'
+import type { TTheme } from '@types'
 
 const getThemeClassName = (theme: TTheme) => {
   switch (theme) {
