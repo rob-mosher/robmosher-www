@@ -9,6 +9,7 @@ import type { ReactNode as TReactNode } from 'react'
 import { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player'
 import type { ReactPlayerProps as TReactPlayerProps } from 'react-player'
+import { Calendar } from '@assets'
 import { mergeClassName } from '@lib'
 import type { TVideo } from '@types'
 import { Heading } from './Heading'
@@ -30,6 +31,13 @@ export const Video = ({
     setIsMounted(true)
   }, [])
 
+  const date = video.date
+    ? (
+      <div className='mt-4 flex items-center justify-start gap-2 opacity-40'>
+        <Calendar />
+        {video.date}
+      </div>
+    ) : null
   const description = video.description
     ? <div className='mt-4'>{video.description}</div>
     : null
@@ -80,6 +88,7 @@ export const Video = ({
         {personnel}
         {description}
         {children}
+        {date}
       </div>
     </div>
   )

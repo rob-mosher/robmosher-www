@@ -16,7 +16,7 @@ export const BlogRollItem = ({
   theme?: TTheme
 }) => {
   const router = useRouter()
-  const blogPath = `/new/${blog.slug}`
+  const blogPath = blog.slug ? `/new/${blog.slug}` : '#'
 
   const handleClick = () => router.push(blogPath)
 
