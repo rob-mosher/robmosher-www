@@ -1,6 +1,7 @@
 export * from './BlogRollItem'
 export * from './Button'
 export * from './Footer'
+export * from './Gallery'
 export * from './Header'
 export * from './Heading'
 export * from './Loader'
