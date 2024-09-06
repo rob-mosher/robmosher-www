@@ -21,7 +21,6 @@ export const battlesEnd: TVideo = {
   id: 'video--battles-end',
   date: 'Jan 16th, 2024',
   description: descriptionJSX,
-  imageAlt: `Play video for Battle${rightSingleQuote}s End`,
   imageSrc: '/images/video-thumbnails/battles-end.png',
   slug: 'battles-end',
   subTitle: 'Processional Music for Space, via the Sega Genesis / Mega Drive',

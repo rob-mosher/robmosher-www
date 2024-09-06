@@ -30,7 +30,6 @@ const personnel = [
 
 export const aroundTheBend: TVideo = {
   id: 'video--around-the-bend',
-  imageAlt: 'Play video of Around the Bend',
   imageSrc: '/images/video-thumbnails/polebridge-around-the-bend.jpg',
   personnel,
   subTitle: 'Polebridge',

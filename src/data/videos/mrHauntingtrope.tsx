@@ -19,7 +19,6 @@ export const mrHauntingtrope: TVideo = {
   id: 'video--mr-hauntingtrope',
   date: 'March 15th, 2024',
   description: descriptionJSX,
-  imageAlt: 'Image of Mr. Hauntingtrope video',
   imageSrc: '/images/video-thumbnails/mr-hauntingtrope.png',
   slug: 'mr-hauntingtrope',
   subTitle: 'Music for synthesizer and percussion',

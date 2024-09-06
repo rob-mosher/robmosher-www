@@ -44,7 +44,6 @@ export const watchOutForTheMoonlight: TVideo = {
   id: 'video--watch-out-for-the-moonlight',
   date: 'Jan 30th, 2024',
   description: descriptionJSX,
-  imageAlt: 'Image of Watch Out for the Moonlight video',
   imageSrc: '/images/video-thumbnails/watch-out-for-the-moonlight.png',
   slug: 'watch-out-for-the-moonlight',
   subTitle: 'Music for Sega Genesis / Mega Drive',

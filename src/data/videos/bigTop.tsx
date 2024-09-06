@@ -18,7 +18,6 @@ const descriptionJSX: ReactNode = (
 export const bigTop: TVideo = {
   id: 'video--big-top',
   description: descriptionJSX,
-  imageAlt: 'Play video of Big Top',
   imageSrc: '/images/video-thumbnails/carousel-big-top.png',
   title: 'Big Top',
   videoUrl: 'https://www.youtube.com/watch?v=bfza7juxe3g',

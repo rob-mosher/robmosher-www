@@ -16,7 +16,6 @@ const personnel = [
 
 export const whoIsTheCutest: TVideo = {
   id: 'video--who-is-the-cutest',
-  imageAlt: 'Watch video for Who Is The Cutest?',
   imageSrc: '/images/video-thumbnails/who-is-the-cutest.jpg',
   description: `Spoiler alert: it${rightSingleQuote}s yoooou.`,
   personnel,

@@ -8,23 +8,23 @@ import type { TVideo, TTheme } from '@types'
 import { Heading } from './Heading'
 import { Section } from './Section'
 
-export const BlogPreview = ({
-  blogPreview,
+export const BlogRollItem = ({
+  blog,
   theme,
 }: {
-  blogPreview: TVideo
+  blog: TVideo
   theme?: TTheme
 }) => {
   const router = useRouter()
-  const blogPath = `/new/${blogPreview.slug}`
+  const blogPath = `/new/${blog.slug}`
 
   const handleClick = () => router.push(blogPath)
 
-  const date = blogPreview.date
+  const date = blog.date
     ? (
       <div className='flex items-center justify-start gap-2 opacity-40'>
         <Calendar />
-        {blogPreview.date}
+        {blog.date}
       </div>
     ) : null
 
@@ -35,9 +35,9 @@ export const BlogPreview = ({
     >
       <div className='flex-[50%]'>
         <Image
-          alt={blogPreview.imageAlt}
+          alt={`View page for ${blog.title}`}
           className='w-full cursor-pointer hover:opacity-75'
-          src={blogPreview.imageSrc}
+          src={blog.imageSrc}
           width={450}
           height={800}
           onClick={handleClick}
@@ -46,12 +46,12 @@ export const BlogPreview = ({
       <div className='flex flex-[50%] flex-col'>
         <Heading>
           <Link href={blogPath} className='hover:underline hover:opacity-75'>
-            {blogPreview.title}
+            {blog.title}
           </Link>
         </Heading>
         {date}
         <p className='mt-4 text-lg'>
-          {blogPreview.subTitle && `${blogPreview.subTitle}.`}
+          {blog.subTitle && `${blog.subTitle}.`}
         </p>
         <Link
           className='mt-9 tracking-wide underline hover:opacity-75'

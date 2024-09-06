@@ -16,7 +16,6 @@ export const winterCarousel: TVideo = {
   id: 'video--winter-carousel',
   date: 'March 26th, 2024',
   description: descriptionJSX,
-  imageAlt: 'Image of Mr. Winter Carousel video',
   imageSrc: '/images/video-thumbnails/winter-carousel.png',
   slug: 'winter-carousel',
   subTitle: 'Music for Carousel',

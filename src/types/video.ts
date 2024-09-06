@@ -6,7 +6,6 @@ export interface TVideo {
   date?: string
   description?: string | ReactNode
   hideControls?: boolean
-  imageAlt: string
   imageSrc: string
   personnel?: TPersonnel[]
   slug?: string

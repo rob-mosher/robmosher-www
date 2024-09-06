@@ -49,7 +49,7 @@ export const Video = ({
     light: video.imageSrc
       ? (
         <Image
-          alt={video.imageAlt ?? 'Video Thumbnail'}
+          alt={`Play video of ${video.title}`}
           src={video.imageSrc}
           width={1600}
           height={900}

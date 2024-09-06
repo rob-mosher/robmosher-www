@@ -24,7 +24,6 @@ export const pancakeDaydreams: TVideo = {
   id: 'video--pancake-daydreams',
   date: 'Dec 30th, 2023',
   description: descriptionJSX,
-  imageAlt: 'Image of Pancake Daydreams video',
   imageSrc: '/images/video-thumbnails/pancake-daydreams.png',
   slug: 'pancake-daydreams',
   subTitle: 'Music for Ondioline Synthesizer',

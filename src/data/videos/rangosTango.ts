@@ -31,7 +31,6 @@ const personnel = [
 
 export const rangosTango: TVideo = {
   id: 'video--rangos-tango',
-  imageAlt: `Play video of Rango${rightSingleQuote}s Tango`,
   imageSrc: '/images/video-thumbnails/polebridge-rangos-tango.jpg',
   description: 'Filmed and edited by Garrett Burns (Memetic Studios).',
   personnel,
