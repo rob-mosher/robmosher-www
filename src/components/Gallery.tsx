@@ -2,7 +2,7 @@ import Image from 'next/image'
 import type { TGalleryImage } from '@types'
 
 export const Gallery = ({ images }: {images: TGalleryImage[]}) => {
-  const galleryJSX = images.map((image, i) => (
+  const galleryJSX = images.map((image) => (
     <div key={image.src} className='flex w-full'>
       <Image
         alt={image.alt}
