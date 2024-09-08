@@ -13,7 +13,7 @@ export const Nav = () => {
   const isActive = (path: string) => path === pathName
   const navJSX = navItems.map((navItem) => (
     <Link
-      key={navItem.id}
+      key={navItem.href}
       className={mergeClassName(
         'py-1 text-gray-500 text-1.5xl',
         isActive(navItem.href)

@@ -5,7 +5,7 @@ import { meetTheMusic } from '@data'
 import { quotes } from './data'
 
 const quotesJSX = quotes.map((quote) => (
-  <Quote key={quote.citation} quotation={quote.quotation} citation={quote.citation} />
+  <Quote key={quote.quotation} quotation={quote.quotation} citation={quote.citation} />
 ))
 
 const Storyville = () => (

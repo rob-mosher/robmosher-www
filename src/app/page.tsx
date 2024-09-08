@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-
 import {
   Button, Heading, Project, Section,
 } from '@components'
@@ -8,7 +6,7 @@ import { projects } from './data'
 const Home = () => {
   const projectsJSX = projects.map((project) => (
     <Project
-      key={project.id}
+      key={project.href}
       alt={project.alt}
       linkClassName='hover:opacity-75 transition-opacity duration-200'
       href={project.href}
