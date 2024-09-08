@@ -1,11 +1,11 @@
 import { Section, Video } from '@components'
-import { battleBoyBlog } from '@data'
+import { battleBoy, battleBoyBlog } from '@data'
 
 const BattleBoy = () => (
   <Section>
     <Video
       date={battleBoyBlog.date}
-      video={battleBoyBlog.video}
+      video={battleBoy}
     />
   </Section>
 )
