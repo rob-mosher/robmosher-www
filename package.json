@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "npm run clean && next build",
+    "check:types": "npx tsc --noEmit --skipLibCheck",
     "clean": "rimraf .next out",
     "dev": "next dev",
     "lint": "next lint",
