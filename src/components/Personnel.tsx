@@ -11,7 +11,7 @@ export const Personnel = ({
     <li key={person.id}>
       {person.name}
       {person.role && (
-        <span className='ml-1 font-title text-base font-thin uppercase tracking-wide'>
+        <span className='ml-1 font-title text-base font-thin uppercase tracking-wider'>
           {` ${delimiter} ${person.role}`}
         </span>
       )}

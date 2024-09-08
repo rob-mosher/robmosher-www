@@ -1,4 +1,6 @@
-import { Quote, Section, Video } from '@components'
+import {
+  Heading, Quote, Section, Video,
+} from '@components'
 import { meetTheMusic } from '@data'
 import { quotes } from './data'
 
@@ -11,7 +13,10 @@ const Storyville = () => (
     <Section theme='bright'>
       <Video video={meetTheMusic} />
     </Section>
-    <Section className='flex items-center justify-center gap-10'>
+    <Section className='flex items-center justify-center gap-16'>
+      <Heading as='h2' className='text-6xl'>
+        Press
+      </Heading>
       {quotesJSX}
     </Section>
   </>
