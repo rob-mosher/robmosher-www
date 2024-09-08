@@ -1,7 +1,8 @@
+import { ReactNode } from 'react'
 import { Heading } from '@components'
-import type { TVideo } from '@types'
+import type { TBlogItem, TVideo } from '@types'
 
-const descriptionJSX = (
+const descriptionJSX: ReactNode = (
   <>
     <p>
       Composed and performed 30-Dec-2023 by Rob Mosher.
@@ -21,12 +22,15 @@ const descriptionJSX = (
 )
 
 export const pancakeDaydreams: TVideo = {
-  id: 'video--pancake-daydreams',
-  date: 'Dec 30th, 2023',
   description: descriptionJSX,
   imageSrc: '/images/video-thumbnails/pancake-daydreams.png',
-  slug: 'pancake-daydreams',
   subTitle: 'Music for Ondioline Synthesizer',
   title: 'Pancake Daydreams',
   videoUrl: 'https://www.youtube.com/watch?v=T9JstPzxeS0',
+}
+
+export const pancakeDaydreamsBlog: TBlogItem = {
+  date: 'Dec 30th, 2023',
+  slug: 'pancake-daydreams',
+  video: pancakeDaydreams,
 }

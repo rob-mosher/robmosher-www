@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { Heading } from '@components'
-import type { TVideo } from '@types'
+import type { TBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -41,12 +41,15 @@ const descriptionJSX: ReactNode = (
 )
 
 export const watchOutForTheMoonlight: TVideo = {
-  id: 'video--watch-out-for-the-moonlight',
-  date: 'Jan 30th, 2024',
   description: descriptionJSX,
   imageSrc: '/images/video-thumbnails/watch-out-for-the-moonlight.png',
-  slug: 'watch-out-for-the-moonlight',
   subTitle: 'Music for Sega Genesis / Mega Drive',
   title: 'Watch Out for the Moonlight',
   videoUrl: 'https://www.youtube.com/watch?v=GBPDVF6nhdM',
+}
+
+export const watchOutForTheMoonlightBlog: TBlogItem = {
+  date: 'Jan 30th, 2024',
+  slug: 'watch-out-for-the-moonlight',
+  video: watchOutForTheMoonlight,
 }

@@ -1,42 +1,42 @@
-import { BlogRollItem } from '@components'
+import { BlogItem } from '@components'
 import {
-  battlesEnd,
-  battleBoy,
-  bigTop,
-  caverns,
-  cookieJarParade,
-  mrHauntingtrope,
-  pancakeDaydreams,
-  robotMeditations1,
-  robotMeditations2,
-  thinkersLullaby,
-  twoMinuteWaltz,
-  watchOutForTheMoonlight,
-  winterCarousel,
+  battlesEndBlog,
+  battleBoyBlog,
+  bigTopBlog,
+  cavernsBlog,
+  cookieJarParadeBlog,
+  mrHauntingtropeBlog,
+  pancakeDaydreamsBlog,
+  robotMeditations1Blog,
+  robotMeditations2Blog,
+  thinkersLullabyBlog,
+  twoMinuteWaltzBlog,
+  watchOutForTheMoonlightBlog,
+  winterCarouselBlog,
 } from '@data'
-import type { TVideo } from '@types'
+import type { TBlogItem } from '@types'
 
 // Newer blog entries on top.
-const blogRoll: TVideo[] = [
-  battleBoy,
-  cookieJarParade,
-  caverns,
-  twoMinuteWaltz,
-  thinkersLullaby,
-  robotMeditations2,
-  bigTop,
-  robotMeditations1,
-  winterCarousel,
-  mrHauntingtrope,
-  watchOutForTheMoonlight,
-  battlesEnd,
-  pancakeDaydreams,
+const blogRoll: TBlogItem[] = [
+  battleBoyBlog,
+  cookieJarParadeBlog,
+  cavernsBlog,
+  twoMinuteWaltzBlog,
+  thinkersLullabyBlog,
+  robotMeditations2Blog,
+  bigTopBlog,
+  robotMeditations1Blog,
+  winterCarouselBlog,
+  mrHauntingtropeBlog,
+  watchOutForTheMoonlightBlog,
+  battlesEndBlog,
+  pancakeDaydreamsBlog,
 ]
 
 const New = () => {
   const blogRollJSX = blogRoll.map((blog, index) => (
-    <BlogRollItem
-      key={blog.id}
+    <BlogItem
+      key={blog.slug}
       blog={blog}
       // Alternate between themes (aka zebra striping)
       theme={index % 2 === 0 ? 'bright' : undefined}

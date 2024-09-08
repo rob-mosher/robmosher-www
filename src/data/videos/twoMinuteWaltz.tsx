@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { Heading } from '@components'
-import type { TVideo } from '@types'
+import type { TBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -21,17 +21,21 @@ const descriptionJSX: ReactNode = (
       <br />
       Two-minute waltz,
       <br />
-      Mmm.
+      Hmm.
     </p>
   </>
 )
 
 export const twoMinuteWaltz: TVideo = {
-  id: 'video--two-minute-waltz',
   imageSrc: '/images/video-thumbnails/two-minute-waltz.jpg',
   description: descriptionJSX,
-  slug: 'two-minute-waltz',
   subTitle: 'Music for Music Box',
   title: 'Two-Minute Waltz',
   videoUrl: 'https://www.youtube.com/watch?v=GCI0K1Rw54U',
+}
+
+export const twoMinuteWaltzBlog: TBlogItem = {
+  date: 'May 6th, 2024',
+  slug: 'two-minute-waltz',
+  video: twoMinuteWaltz,
 }

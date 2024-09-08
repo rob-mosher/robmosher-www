@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { Heading } from '@components'
-import type { TVideo } from '@types'
+import type { TBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -17,12 +17,15 @@ const descriptionJSX: ReactNode = (
 )
 
 export const cookieJarParade: TVideo = {
-  id: 'video--cookie-jar-parade',
   imageSrc: '/images/video-thumbnails/cookie-jar-parade.png',
-  date: 'May 29th, 2024',
   description: descriptionJSX,
-  slug: 'cookie-jar-parade',
   subTitle: 'Music for Music Box',
   title: 'Cookie Jar Parade',
   videoUrl: 'https://www.youtube.com/watch?v=ekO_g7RQ1E8',
+}
+
+export const cookieJarParadeBlog: TBlogItem = {
+  date: 'May 29th, 2024',
+  slug: 'cookie-jar-parade',
+  video: cookieJarParade,
 }

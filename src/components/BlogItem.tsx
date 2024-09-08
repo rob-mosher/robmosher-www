@@ -4,15 +4,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Calendar } from '@assets'
-import type { TVideo, TTheme } from '@types'
+import type { TTheme, TBlogItem } from '@types'
 import { Heading } from './Heading'
 import { Section } from './Section'
 
-export const BlogRollItem = ({
+export const BlogItem = ({
   blog,
   theme,
 }: {
-  blog: TVideo
+  blog: TBlogItem
   theme?: TTheme
 }) => {
   const router = useRouter()
@@ -35,9 +35,9 @@ export const BlogRollItem = ({
     >
       <div className='flex-[50%]'>
         <Image
-          alt={`View page for ${blog.title}`}
+          alt={`View page for ${blog.video.title}`}
           className='w-full cursor-pointer hover:opacity-75'
-          src={blog.imageSrc}
+          src={blog.video.imageSrc}
           width={450}
           height={800}
           onClick={handleClick}
@@ -46,12 +46,12 @@ export const BlogRollItem = ({
       <div className='flex flex-[50%] flex-col'>
         <Heading>
           <Link href={blogPath} className='hover:underline hover:opacity-75'>
-            {blog.title}
+            {blog.video.title}
           </Link>
         </Heading>
         {date}
         <p className='mt-4 text-lg'>
-          {blog.subTitle && `${blog.subTitle}.`}
+          {blog.video.subTitle && `${blog.video.subTitle}.`}
         </p>
         <Link
           className='mt-9 tracking-wide underline hover:opacity-75'

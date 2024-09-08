@@ -8,7 +8,7 @@ export const Personnel = ({
   list: TPersonnel[]
 }) => {
   const personnelList = list.map((person) => (
-    <li key={person.id}>
+    <li key={person.name}>
       {person.name}
       {person.role && (
         <span className='ml-1 font-title text-base font-thin uppercase tracking-wider'>

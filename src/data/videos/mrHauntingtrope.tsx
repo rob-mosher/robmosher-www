@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import type { TVideo } from '@types'
+import type { TBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -16,12 +16,15 @@ const descriptionJSX: ReactNode = (
 )
 
 export const mrHauntingtrope: TVideo = {
-  id: 'video--mr-hauntingtrope',
-  date: 'March 15th, 2024',
   description: descriptionJSX,
   imageSrc: '/images/video-thumbnails/mr-hauntingtrope.png',
-  slug: 'mr-hauntingtrope',
   subTitle: 'Music for synthesizer and percussion',
   title: 'Mr. Hauntingtrope',
   videoUrl: 'https://www.youtube.com/watch?v=1rNB7DYYffI',
+}
+
+export const mrHauntingtropeBlog: TBlogItem = {
+  date: 'March 15th, 2024',
+  slug: 'mr-hauntingtrope',
+  video: mrHauntingtrope,
 }

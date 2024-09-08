@@ -11,17 +11,19 @@ import ReactPlayer from 'react-player'
 import type { ReactPlayerProps as TReactPlayerProps } from 'react-player'
 import { Calendar } from '@assets'
 import { mergeClassName } from '@lib'
-import type { TVideo } from '@types'
+import type { TVideo, TBlogItem } from '@types'
 import { Heading } from './Heading'
 import { Loader } from './Loader'
 import { Personnel } from './Personnel'
 
 export const Video = ({
   children,
+  date,
   swapPositions = false,
   video,
 }: {
   children?: TReactNode
+  date?: TBlogItem['date']
   swapPositions?: boolean
   video: TVideo
 }) => {
@@ -31,20 +33,20 @@ export const Video = ({
     setIsMounted(true)
   }, [])
 
-  const date = video.date
+  const dateJSX = date
     ? (
       <div className='mt-4 flex items-center justify-start gap-2 opacity-40'>
         <Calendar />
-        {video.date}
+        {date}
       </div>
     ) : null
-  const description = video.description
+  const descriptionJSX = video.description
     ? <div className='mt-4'>{video.description}</div>
     : null
-  const personnel = video.personnel
+  const personnelJSX = video.personnel
     ? <Personnel list={video.personnel} />
     : null
-  const subTitle = video.subTitle
+  const subTitleJSX = video.subTitle
     ? <Heading as='h4'>{video.subTitle}</Heading>
     : null
 
@@ -84,11 +86,11 @@ export const Video = ({
         <Heading as='h2'>
           {video.title}
         </Heading>
-        {subTitle}
-        {personnel}
-        {description}
+        {subTitleJSX}
+        {personnelJSX}
+        {descriptionJSX}
         {children}
-        {date}
+        {dateJSX}
       </div>
     </div>
   )

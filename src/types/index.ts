@@ -1,3 +1,4 @@
+export * from './blogItem'
 export * from './gallery'
 export * from './nav'
 export * from './personnel'

@@ -1,9 +1,12 @@
 import { Section, Video } from '@components'
-import { mrHauntingtrope } from '@data'
+import { mrHauntingtropeBlog } from '@data'
 
 const MrHauntingtrope = () => (
   <Section>
-    <Video video={mrHauntingtrope} />
+    <Video
+      date={mrHauntingtropeBlog.date}
+      video={mrHauntingtropeBlog.video}
+    />
   </Section>
 )
 

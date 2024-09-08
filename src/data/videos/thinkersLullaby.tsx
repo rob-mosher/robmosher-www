@@ -1,6 +1,7 @@
-import type { TVideo } from '@types'
+import { ReactNode } from 'react'
+import type { TBlogItem, TVideo } from '@types'
 
-const descriptionJSX = (
+const descriptionJSX: ReactNode = (
   <>
     <p>
       Composed, performed, and recorded by Rob Mosher.
@@ -12,12 +13,15 @@ const descriptionJSX = (
 )
 
 export const thinkersLullaby: TVideo = {
-  id: 'video--thinkers-lullaby',
-  date: 'April 15th, 2024',
   description: descriptionJSX,
   imageSrc: '/images/video-thumbnails/thinkers-lullaby.png',
-  slug: 'thinkers-lullaby',
   subTitle: 'Music for Music Box',
   title: 'Thinkers Lullaby',
   videoUrl: 'https://www.youtube.com/watch?v=NCvunShmKwQ',
+}
+
+export const thinkersLullabyBlog: TBlogItem = {
+  date: 'April 15th, 2024',
+  slug: 'thinkers-lullaby',
+  video: thinkersLullaby,
 }

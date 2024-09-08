@@ -1,4 +1,4 @@
-export * from './BlogRollItem'
+export * from './BlogItem'
 export * from './Button'
 export * from './Footer'
 export * from './Gallery'

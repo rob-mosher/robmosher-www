@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import type { TVideo } from '@types'
+import type { TBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -13,12 +13,15 @@ const descriptionJSX: ReactNode = (
 )
 
 export const winterCarousel: TVideo = {
-  id: 'video--winter-carousel',
-  date: 'March 26th, 2024',
   description: descriptionJSX,
   imageSrc: '/images/video-thumbnails/winter-carousel.png',
-  slug: 'winter-carousel',
   subTitle: 'Music for Carousel',
   title: 'Winter Carousel',
   videoUrl: 'https://www.youtube.com/watch?v=DDN_p8FS4YY',
+}
+
+export const winterCarouselBlog: TBlogItem = {
+  date: 'March 26th, 2024',
+  slug: 'winter-carousel',
+  video: winterCarousel,
 }
