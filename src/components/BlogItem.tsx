@@ -18,7 +18,10 @@ export const BlogItem = ({
   const router = useRouter()
   const blogPath = blog.slug ? `/new/${blog.slug}` : '#'
 
-  const handleClick = () => router.push(blogPath)
+  const handleClick = () => {
+    window.scrollTo(0, 0)
+    router.push(blogPath)
+  }
 
   const date = blog.date
     ? (
@@ -45,7 +48,11 @@ export const BlogItem = ({
       </div>
       <div className='flex flex-[50%] flex-col'>
         <Heading>
-          <Link href={blogPath} className='hover:underline hover:opacity-75'>
+          <Link
+            className='hover:underline hover:opacity-75'
+            href={blogPath}
+            scroll
+          >
             {blog.video.title}
           </Link>
         </Heading>
@@ -56,6 +63,7 @@ export const BlogItem = ({
         <Link
           className='mt-9 tracking-wide underline hover:opacity-75'
           href={blogPath}
+          scroll
         >
           Read more
         </Link>
