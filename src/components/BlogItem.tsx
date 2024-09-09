@@ -1,9 +1,9 @@
 'use client'
 
+import { CalendarIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Calendar } from '@assets'
 import type { TTheme, TBlogItem } from '@types'
 import { Heading } from './Heading'
 import { Section } from './Section'
@@ -23,7 +23,7 @@ export const BlogItem = ({
   const date = blog.date
     ? (
       <div className='flex items-center justify-start gap-2 opacity-40'>
-        <Calendar />
+        <CalendarIcon width={24} height={24} />
         {blog.date}
       </div>
     ) : null

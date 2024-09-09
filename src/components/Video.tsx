@@ -4,12 +4,12 @@
 
 'use client'
 
+import { CalendarIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import type { ReactNode as TReactNode } from 'react'
 import { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player'
 import type { ReactPlayerProps as TReactPlayerProps } from 'react-player'
-import { Calendar } from '@assets'
 import { mergeClassName } from '@lib'
 import type { TVideo, TBlogItem } from '@types'
 import { Heading } from './Heading'
@@ -36,7 +36,7 @@ export const Video = ({
   const dateJSX = date
     ? (
       <div className='mt-4 flex items-center justify-start gap-2 opacity-40'>
-        <Calendar />
+        <CalendarIcon width={24} height={24} />
         {date}
       </div>
     ) : null
