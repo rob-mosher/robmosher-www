@@ -9,9 +9,20 @@ import { navItems } from './data'
 import { Heading } from '../Heading'
 import { Section } from '../Section'
 
+const matchesBasePath = (path: string, pathName: string): boolean => {
+  // Exact root `/` match or treat `/projects` as equivalent to `/`
+  if (path === '/' && (pathName === '/' || pathName.startsWith('/projects'))) {
+    return true
+  }
+
+  // Exact match or sub-path match (e.g., `/new/foo-bar` matches `/new`)
+  return path === pathName || pathName.startsWith(`${path}/`)
+}
+
 export const Header = () => {
   const pathName = usePathname()
-  const isActive = (path: string) => path === pathName
+
+  const isActive = (path: string) => matchesBasePath(path, pathName)
 
   return (
     <Section as='header' outerClassName='bg-white border border-b-gray-120' className='py-4'>
