@@ -1,6 +1,3 @@
-# TODO remove this ignore later along in the development process
-package-lock.json
-
 # dependencies
 /node_modules
 /.pnp
