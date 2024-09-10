@@ -17,7 +17,7 @@ const descriptionJSX: ReactNode = (
 
 export const mrHauntingtrope: TVideo = {
   description: descriptionJSX,
-  imageSrc: '/images/video-thumbnails/mr-hauntingtrope.png',
+  imageSrc: '/images/videos/mr-hauntingtrope.png',
   subTitle: 'Music for synthesizer and percussion',
   title: 'Mr. Hauntingtrope',
   videoUrl: 'https://www.youtube.com/watch?v=1rNB7DYYffI',

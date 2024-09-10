@@ -17,7 +17,7 @@ const descriptionJSX: ReactNode = (
 
 export const battleBoy: TVideo = {
   description: descriptionJSX,
-  imageSrc: '/images/video-thumbnails/battle-boy.png',
+  imageSrc: '/images/videos/battle-boy.png',
   subTitle: 'Music for Nintendo / Famicom',
   title: 'Battle Boy',
   videoUrl: 'https://www.youtube.com/watch?v=wiO1Hczb5Hs',

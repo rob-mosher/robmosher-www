@@ -17,7 +17,7 @@ const descriptionJSX: ReactNode = (
 )
 
 export const cookieJarParade: TVideo = {
-  imageSrc: '/images/video-thumbnails/cookie-jar-parade.png',
+  imageSrc: '/images/videos/cookie-jar-parade.png',
   description: descriptionJSX,
   subTitle: 'Music for Music Box',
   title: 'Cookie Jar Parade',

@@ -23,7 +23,7 @@ const descriptionJSX: ReactNode = (
 
 export const pancakeDaydreams: TVideo = {
   description: descriptionJSX,
-  imageSrc: '/images/video-thumbnails/pancake-daydreams.png',
+  imageSrc: '/images/videos/pancake-daydreams.png',
   subTitle: 'Music for Ondioline Synthesizer',
   title: 'Pancake Daydreams',
   videoUrl: 'https://www.youtube.com/watch?v=T9JstPzxeS0',

@@ -42,7 +42,7 @@ const descriptionJSX: ReactNode = (
 
 export const watchOutForTheMoonlight: TVideo = {
   description: descriptionJSX,
-  imageSrc: '/images/video-thumbnails/watch-out-for-the-moonlight.png',
+  imageSrc: '/images/videos/watch-out-for-the-moonlight.png',
   subTitle: 'Music for Sega Genesis / Mega Drive',
   title: 'Watch Out for the Moonlight',
   videoUrl: 'https://www.youtube.com/watch?v=GBPDVF6nhdM',

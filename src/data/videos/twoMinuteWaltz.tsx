@@ -27,7 +27,7 @@ const descriptionJSX: ReactNode = (
 )
 
 export const twoMinuteWaltz: TVideo = {
-  imageSrc: '/images/video-thumbnails/two-minute-waltz.jpg',
+  imageSrc: '/images/videos/two-minute-waltz.jpg',
   description: descriptionJSX,
   subTitle: 'Music for Music Box',
   title: 'Two-Minute Waltz',

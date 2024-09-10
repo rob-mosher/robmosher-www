@@ -19,7 +19,7 @@ const descriptionJSX: ReactNode = (
 
 export const battlesEnd: TVideo = {
   description: descriptionJSX,
-  imageSrc: '/images/video-thumbnails/battles-end.png',
+  imageSrc: '/images/videos/battles-end.png',
   subTitle: 'Processional Music for Space, via the Sega Genesis / Mega Drive',
   title: `Battle${rightSingleQuote}s End`,
   videoUrl: 'https://www.youtube.com/watch?v=572yRWJYG6I',

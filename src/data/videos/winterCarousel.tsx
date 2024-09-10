@@ -14,7 +14,7 @@ const descriptionJSX: ReactNode = (
 
 export const winterCarousel: TVideo = {
   description: descriptionJSX,
-  imageSrc: '/images/video-thumbnails/winter-carousel.png',
+  imageSrc: '/images/videos/winter-carousel.png',
   subTitle: 'Music for Carousel',
   title: 'Winter Carousel',
   videoUrl: 'https://www.youtube.com/watch?v=DDN_p8FS4YY',

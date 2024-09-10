@@ -13,7 +13,7 @@ const personnel: TPersonnel[] = [
 ]
 
 export const whoIsTheCutest: TVideo = {
-  imageSrc: '/images/video-thumbnails/who-is-the-cutest.jpg',
+  imageSrc: '/images/videos/who-is-the-cutest.jpg',
   description: `Spoiler alert: it${rightSingleQuote}s yoooou.`,
   personnel,
   title: 'Who is the Cutest?',

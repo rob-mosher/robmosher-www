@@ -24,7 +24,7 @@ const personnel: TPersonnel[] = [
 ]
 
 export const aroundTheBend: TVideo = {
-  imageSrc: '/images/video-thumbnails/polebridge-around-the-bend.jpg',
+  imageSrc: '/images/videos/polebridge-around-the-bend.jpg',
   personnel,
   subTitle: 'Polebridge',
   title: 'Around the Bend',

@@ -25,7 +25,7 @@ const personnel: TPersonnel[] = [
 ]
 
 export const rangosTango: TVideo = {
-  imageSrc: '/images/video-thumbnails/polebridge-rangos-tango.jpg',
+  imageSrc: '/images/videos/polebridge-rangos-tango.jpg',
   description: 'Filmed and edited by Garrett Burns (Memetic Studios).',
   personnel,
   subTitle: 'Polebridge',

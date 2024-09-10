@@ -17,7 +17,7 @@ const descriptionJSX: ReactNode = (
 
 export const caverns: TVideo = {
   description: descriptionJSX,
-  imageSrc: '/images/video-thumbnails/caverns.png',
+  imageSrc: '/images/videos/caverns.png',
   subTitle: 'Music for Super Nintendo / Super Famicom',
   title: 'Caverns',
   videoUrl: 'https://www.youtube.com/watch?v=ddf_osbh8vA',

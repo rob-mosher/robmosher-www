@@ -14,7 +14,7 @@ const descriptionJSX: ReactNode = (
 
 export const thinkersLullaby: TVideo = {
   description: descriptionJSX,
-  imageSrc: '/images/video-thumbnails/thinkers-lullaby.png',
+  imageSrc: '/images/videos/thinkers-lullaby.png',
   subTitle: 'Music for Music Box',
   title: 'Thinkers Lullaby',
   videoUrl: 'https://www.youtube.com/watch?v=NCvunShmKwQ',
