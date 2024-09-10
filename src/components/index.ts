@@ -1,3 +1,5 @@
+export * from './Album'
+export * from './AudioPlayer'
 export * from './BlogItem'
 export * from './Button'
 export * from './Footer'

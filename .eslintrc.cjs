@@ -64,6 +64,11 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'jsx-a11y/label-has-associated-control': ['warn'],
+    "jsx-a11y/media-has-caption": [ 'warn', {
+      "audio": [ "Audio" ],
+      "video": [ "Video" ],
+      "track": [ "Track" ],
+    }],
     'jsx-quotes': ['error', 'prefer-single'],
     'max-len': 'warn',
     'react/function-component-definition': [

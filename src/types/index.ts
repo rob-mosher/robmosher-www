@@ -1,3 +1,4 @@
+export * from './album'
 export * from './blogItem'
 export * from './gallery'
 export * from './nav'

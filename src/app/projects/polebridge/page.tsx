@@ -1,13 +1,18 @@
-import { Gallery, Section, Video } from '@components'
+import {
+  Album, Gallery, Section, Video,
+} from '@components'
 import { aroundTheBend } from '@data'
-import { galleryImages } from './data'
+import { polebridge, galleryImages } from './data'
 
 const Polebridge = () => (
   <>
     <Section>
-      <Video video={aroundTheBend} />
+      <Album album={polebridge} />
     </Section>
     <Section theme='bright'>
+      <Video video={aroundTheBend} />
+    </Section>
+    <Section>
       <Gallery images={galleryImages} />
     </Section>
   </>

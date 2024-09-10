@@ -1,3 +1,13 @@
+# hosted by CDN
+/public/audio/
+
+# environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production
+
 # dependencies
 /node_modules
 /.pnp
