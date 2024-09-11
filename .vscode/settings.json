@@ -1,0 +1,8 @@
+{
+  "search.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/out": true,
+    "**/package-lock.json": true
+  }
+}
