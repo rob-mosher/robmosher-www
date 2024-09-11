@@ -2,32 +2,52 @@ import Image from 'next/image'
 import { ReactNode } from 'react'
 import type { TAlbum } from '@types'
 import { AudioPlayer } from './AudioPlayer'
+import { Button } from './Button'
 import { Heading } from './Heading'
 
-export const Album = ({ album, children }: {
-    album: TAlbum, children?: ReactNode }) => (
-      <div className='flex flex-col gap-9 md:flex-row-reverse'>
-        <div className='flex-[50%] md:flex'>
-          <div className='relative h-0 w-full bg-red-200 pb-[100%]'>
-            <Image
-              alt={`${album.title} Album Cover`}
-              className='object-cover'
-              fill
-              src={album.image.src}
-            />
-          </div>
+export const Album = ({ album, children }: { album: TAlbum; children?: ReactNode }) => {
+  const renderVendors = () => {
+    if (!album.vendors || album.vendors.length === 0) return null
+
+    return album.vendors.map((vendor) => (
+      <Button key={vendor.href} className='shrink-0' href={vendor.href}>
+        <span className='flex gap-3'>
+          {vendor.icon && (
+          <>
+            {vendor.icon}
+            {' '}
+          </>
+          )}
+          {vendor.text}
+        </span>
+      </Button>
+    ))
+  }
+
+  return (
+    <div className='flex flex-col gap-9 md:flex-row-reverse'>
+      <div className='flex flex-[50%] flex-col items-center gap-4 lg:flex-[40%]'>
+        <div className='relative h-0 w-full pb-[100%]'>
+          <Image
+            alt={`${album.title} Album Cover`}
+            className='object-cover'
+            fill
+            src={album.image.src}
+          />
         </div>
-        <div className='flex flex-[50%] flex-col gap-4'>
-          <Heading>
-            {album.title}
-          </Heading>
-          {album.description}
-          {children}
-          <div className='space-y-4'>
-            {album.tracks && (
-              <AudioPlayer tracks={album.tracks} />
-            )}
-          </div>
-        </div>
+        <div>{renderVendors()}</div>
       </div>
-)
+
+      <div className='flex flex-[50%] flex-col gap-4 lg:flex-[60%]'>
+        <Heading>{album.title}</Heading>
+        {album.description}
+        {children}
+        {album.tracks && (
+          <div className='space-y-4'>
+            <AudioPlayer tracks={album.tracks} />
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}

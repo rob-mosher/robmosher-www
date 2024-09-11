@@ -7,12 +7,14 @@ interface TImage {
 }
 
 interface TVendor {
-  name: string
-  url: string
+  href: string
+  icon?: ReactNode
+  text: string
 }
 export interface TAlbumTrack {
-  title: string
+  subTitle?: string
   src: string
+  title: string
 }
 
 export interface TAlbum {

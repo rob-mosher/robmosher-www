@@ -19,7 +19,7 @@ export const battleBoy: TVideo = {
   description: descriptionJSX,
   imageSrc: '/images/videos/battle-boy.png',
   subTitle: 'Chiptune Music for Nintendo / Famicom',
-  title: 'Battle Boy',
+  title: 'BattleBoy',
   videoUrl: 'https://www.youtube.com/watch?v=wiO1Hczb5Hs',
 }
 

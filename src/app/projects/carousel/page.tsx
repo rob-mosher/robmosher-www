@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Section, Video } from '@components'
-import { bigTop } from '@data'
+import { bigTop, winterCarousel } from '@data'
 import { getPageTitle } from '@lib'
 
 export const metadata: Metadata = {
@@ -9,9 +9,14 @@ export const metadata: Metadata = {
 }
 
 const Carousel = () => (
-  <Section>
-    <Video video={bigTop} />
-  </Section>
+  <>
+    <Section theme='bright'>
+      <Video video={bigTop} />
+    </Section>
+    <Section>
+      <Video video={winterCarousel} />
+    </Section>
+  </>
 )
 
 export default Carousel

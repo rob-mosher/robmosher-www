@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { AppleMusicIcon } from '@assets'
 import { Heading } from '@components'
 import type { TAlbum, TGalleryImage } from '@types'
 
@@ -44,7 +45,13 @@ export const polebridge: TAlbum = {
       src: `//${cdnHost}/audio/polebridge-marigold.mp3`,
       title: 'Marigold',
     },
-
+  ],
+  vendors: [
+    {
+      href: 'https://itunes.apple.com/us/album/polebridge/id664908767?uo=4',
+      icon: <AppleMusicIcon />,
+      text: 'Buy Album',
+    },
   ],
 }
 

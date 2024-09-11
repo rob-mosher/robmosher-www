@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import {
+  Album,
   Heading, Quote, Section, Video,
 } from '@components'
 import { meetTheMusic } from '@data'
 import { getPageTitle } from '@lib'
-import { quotes } from './data'
+import { quotes, storyville } from './data'
 
 export const metadata: Metadata = {
   title: getPageTitle('Storyville'),
@@ -17,6 +18,9 @@ const quotesJSX = quotes.map((quote) => (
 
 const Storyville = () => (
   <>
+    <Section>
+      <Album album={storyville} />
+    </Section>
     <Section theme='bright'>
       <Video video={meetTheMusic} />
     </Section>

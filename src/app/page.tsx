@@ -13,7 +13,6 @@ const Home = () => {
   const projectsJSX = projects.map((project) => (
     <Project
       key={project.href}
-      alt={project.alt}
       linkClassName='hover:opacity-75 transition-opacity duration-200'
       href={project.href}
       src={project.src}

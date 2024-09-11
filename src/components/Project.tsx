@@ -5,13 +5,12 @@ import type { TProject } from '@types'
 import { Heading } from './Heading'
 
 export const Project = ({
-  alt,
   imageClassName,
   linkClassName,
   src,
   title,
   href,
-}: Omit<TProject, 'id'>) => (
+}: TProject) => (
   <Link
     className={mergeClassName(
       'flex flex-col items-center space-y-4',
@@ -22,7 +21,7 @@ export const Project = ({
   >
     <div className='relative w-full pb-[100%]'>
       <Image
-        alt={alt}
+        alt={`${title} Project`}
         src={src}
         fill
         className={mergeClassName(

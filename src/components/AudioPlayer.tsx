@@ -71,7 +71,12 @@ export const AudioPlayer = ({ tracks }: {
               : <PlayIcon className='size-6' />}
           </button>
           <div className='flex grow items-center justify-between'>
-            <span className='text-lg'>{track.title}</span>
+            <div className='flex flex-col'>
+              <span className='text-lg'>{track.title}</span>
+              {track.subTitle && (
+                <span className='text-sm opacity-75'>{track.subTitle}</span>
+              )}
+            </div>
             {currentTrack === track.src && (
               <span className='text-sm'>
                 {formatTime(currentTime)}
