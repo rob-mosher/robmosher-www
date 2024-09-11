@@ -4,9 +4,6 @@ import type { TBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
-    <Heading as='h4' className='mt-6'>
-      Description
-    </Heading>
     <p>
       An exploration of the soundchip of the Sega Genesis / Mega Drive, the Yamaha YM2612.
     </p>
@@ -43,7 +40,7 @@ const descriptionJSX: ReactNode = (
 export const watchOutForTheMoonlight: TVideo = {
   description: descriptionJSX,
   imageSrc: '/images/videos/watch-out-for-the-moonlight.png',
-  subTitle: 'Music for Sega Genesis / Mega Drive',
+  subTitle: 'Chiptune Music for Sega Genesis / Mega Drive',
   title: 'Watch Out for the Moonlight',
   videoUrl: 'https://www.youtube.com/watch?v=GBPDVF6nhdM',
 }

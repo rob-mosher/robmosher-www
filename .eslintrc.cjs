@@ -63,7 +63,7 @@ module.exports = {
       }
     ],
     'import/prefer-default-export': 'off',
-    'jsx-a11y/label-has-associated-control': ['warn'],
+    'jsx-a11y/label-has-associated-control': 'warn',
     "jsx-a11y/media-has-caption": [ 'warn', {
       "audio": [ "Audio" ],
       "video": [ "Video" ],
@@ -85,11 +85,8 @@ module.exports = {
       },
     ],
     'react/jsx-props-no-spreading': 'off',
-    'react/prop-types': ['off'],
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react/prop-types': 'off',
+    'react-refresh/only-export-components': 'off',
     'semi': ['warn', 'never'],
   },
 };

@@ -1,7 +1,13 @@
+import type { Metadata } from 'next'
 import {
   Button, Heading, Project, Section,
 } from '@components'
+import { defaultPageTitleHomepage } from '@lib'
 import { projects } from './data'
+
+export const metadata: Metadata = {
+  title: defaultPageTitleHomepage,
+}
 
 const Home = () => {
   const projectsJSX = projects.map((project) => (

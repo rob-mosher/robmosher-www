@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { BlogItem } from '@components'
 import {
   battlesEndBlog,
@@ -14,7 +15,13 @@ import {
   watchOutForTheMoonlightBlog,
   winterCarouselBlog,
 } from '@data'
+import { getPageTitle } from '@lib'
 import type { TBlogItem } from '@types'
+
+export const metadata: Metadata = {
+  title: getPageTitle('New'),
+  description: 'Recently released videos and projects',
+}
 
 // Newer blog entries on top.
 const blogRoll: TBlogItem[] = [

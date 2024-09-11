@@ -1,6 +1,7 @@
 // NOTE - ReactPlayer requires client-side rendering, and Next's Image therefore requires the DOM
 // to loaded before rendering the potential thumbnail.
 // TODO account for 'loading'/hydration time
+// TODO video stretching to height of right column in md: size (introduced as part of height fix)
 
 'use client'
 

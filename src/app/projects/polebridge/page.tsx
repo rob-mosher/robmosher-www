@@ -1,8 +1,15 @@
+import type { Metadata } from 'next'
 import {
   Album, Gallery, Section, Video,
 } from '@components'
 import { aroundTheBend } from '@data'
+import { getPageTitle } from '@lib'
 import { polebridge, galleryImages } from './data'
+
+export const metadata: Metadata = {
+  title: getPageTitle('Polebridge'),
+  description: 'Music and videos for Polebridge album, featuring music for clarinet, piano, trumpet, violin, bass, and fiddle',
+}
 
 const Polebridge = () => (
   <>
