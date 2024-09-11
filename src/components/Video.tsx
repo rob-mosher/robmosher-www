@@ -74,9 +74,14 @@ export const Video = ({
     )}
     >
       <div className='flex size-full flex-[65%]'>
-        <div className='flex size-full items-center justify-center'>
+        <div className='relative w-full' style={{ paddingBottom: `${(9 / 16) * 100}%` }}>
           {isMounted ? (
-            <ReactPlayer {...reactPlayerProps} />
+            <ReactPlayer
+              {...reactPlayerProps}
+              className='absolute left-0 top-0'
+              width='100%'
+              height='100%'
+            />
           ) : (
             <Loader />
           )}
