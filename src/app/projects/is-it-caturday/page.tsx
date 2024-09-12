@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
+import { PawIcon } from '@assets'
 import { Button, Heading, Section } from '@components'
 import { getPageTitle } from '@lib'
-import { PawIcon } from '@assets'
 
 export const metadata: Metadata = {
   title: getPageTitle('Is it Caturday'),
@@ -24,15 +23,15 @@ const IsItCaturday = () => (
         </div>
       </div>
 
-      <div className='flex flex-col gap-4 md:flex-[50%] lg:flex-[60%] items-start'>
+      <div className='flex flex-col items-start gap-4 md:flex-[50%] lg:flex-[60%]'>
         <Heading>Is It Caturday?</Heading>
         <Heading as='h4'>Concept</Heading>
         <p>
           People, and cats, need to know. Bridging
           {' '}
-          <Link className='text-bright' href='https://thecatapi.com/'>
+          <a className='text-bright' href='https://thecatapi.com/'>
             The Cat API
-          </Link>
+          </a>
           , responsive design, and an irresponsible concept.
         </p>
         <Button className='flex space-x-3' href='https://isitcaturday.com'>

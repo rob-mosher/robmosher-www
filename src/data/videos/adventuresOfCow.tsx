@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import type { ReactNode } from 'react'
 import type { TVideo } from '@types'
 
@@ -42,7 +41,7 @@ const descriptionJSX: ReactNode = (
       <br />
       Produced by Nicole Belmont
       <br />
-      <Link href='https://www.choralchameleon.com/'>choralchameleon.com</Link>
+      <a href='https://www.choralchameleon.com/'>choralchameleon.com</a>
     </p>
   </div>
 )

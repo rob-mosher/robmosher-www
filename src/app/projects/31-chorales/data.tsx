@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { ReactNode } from 'react'
 import { AppleMusicIcon } from '@assets'
 import { Heading } from '@components'
@@ -17,7 +16,7 @@ const albumDescriptionJSX: ReactNode = (
     <p className='mt-4'>
       Header photo by
       {' '}
-      <Link href='https://petrcancura.com/' className='text-bright'>Petr Cancura</Link>
+      <a href='https://petrcancura.com/' className='text-bright'>Petr Cancura</a>
       .
     </p>
   </div>
