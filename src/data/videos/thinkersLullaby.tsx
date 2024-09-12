@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { rightSingleQuote } from '@lib'
 import type { TBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
@@ -16,7 +17,7 @@ export const thinkersLullaby: TVideo = {
   description: descriptionJSX,
   imageSrc: '/images/videos/thinkers-lullaby.png',
   subTitle: 'Music for Music Box',
-  title: 'Thinkers Lullaby',
+  title: `Thinker${rightSingleQuote}s Lullaby`,
   videoUrl: 'https://www.youtube.com/watch?v=NCvunShmKwQ',
 }
 

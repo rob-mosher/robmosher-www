@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        '31-chorales': "url('/images/31-chorales-score-and-pencil.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        polebridge: "url('/images/polebridge-map.jpg')",
       },
       colors: {
         bright: '#0896A6',

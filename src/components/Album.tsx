@@ -1,11 +1,22 @@
 import Image from 'next/image'
 import { ReactNode } from 'react'
+import { mergeClassName } from '@lib'
 import type { TAlbum } from '@types'
 import { AudioPlayer } from './AudioPlayer'
 import { Button } from './Button'
 import { Heading } from './Heading'
 
-export const Album = ({ album, children }: { album: TAlbum; children?: ReactNode }) => {
+export const Album = ({
+  addAlbumBorder = false,
+  album,
+  children,
+  hideTitle = false,
+}: {
+    addAlbumBorder?: boolean
+    album: TAlbum
+    children?: ReactNode
+    hideTitle?: boolean
+  }) => {
   const renderVendors = () => {
     if (!album.vendors || album.vendors.length === 0) return null
 
@@ -27,7 +38,11 @@ export const Album = ({ album, children }: { album: TAlbum; children?: ReactNode
   return (
     <div className='flex flex-col gap-9 md:flex-row-reverse'>
       <div className='flex flex-[50%] flex-col items-center gap-4 lg:flex-[40%]'>
-        <div className='relative h-0 w-full pb-[100%]'>
+        <div className={mergeClassName(
+          'relative h-0 w-full pb-[100%]',
+          addAlbumBorder && 'border-2 border-black/10',
+        )}
+        >
           <Image
             alt={`${album.title} Album Cover`}
             className='object-cover'
@@ -39,7 +54,9 @@ export const Album = ({ album, children }: { album: TAlbum; children?: ReactNode
       </div>
 
       <div className='flex flex-[50%] flex-col gap-4 lg:flex-[60%]'>
-        <Heading>{album.title}</Heading>
+        {!hideTitle && (
+          <Heading>{album.title}</Heading>
+        )}
         {album.description}
         {children}
         {album.tracks && (

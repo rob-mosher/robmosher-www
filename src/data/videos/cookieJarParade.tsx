@@ -1,12 +1,8 @@
 import { ReactNode } from 'react'
-import { Heading } from '@components'
 import type { TBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
-    <Heading as='h4' className='mt-6'>
-      Description
-    </Heading>
     <p className='mt-4'>
       Composed, performed, and recorded by Rob Mosher.
     </p>

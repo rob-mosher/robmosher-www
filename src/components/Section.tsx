@@ -29,7 +29,6 @@ export const Section = ({
   const elementTag = as
 
   return (
-
     <div className={mergeClassName(
       'flex w-full justify-center',
       getThemeClassName(theme),

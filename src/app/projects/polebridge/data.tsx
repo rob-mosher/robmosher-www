@@ -48,7 +48,7 @@ export const polebridge: TAlbum = {
   ],
   vendors: [
     {
-      href: 'https://itunes.apple.com/us/album/polebridge/id664908767?uo=4',
+      href: 'https://itunes.apple.com/us/album/polebridge/id664908767',
       icon: <AppleMusicIcon />,
       text: 'Buy Album',
     },

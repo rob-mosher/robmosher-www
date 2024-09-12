@@ -33,7 +33,7 @@ export const storyville: TAlbum = {
   ],
   vendors: [
     {
-      href: 'https://itunes.apple.com/us/album/storytime-the-tortoise/id292311820?uo=4',
+      href: 'https://itunes.apple.com/us/album/storytime-the-tortoise/id292311820',
       icon: <AppleMusicIcon />,
       text: 'Buy Album',
     },

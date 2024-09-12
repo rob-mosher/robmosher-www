@@ -4,7 +4,7 @@ import type { TPersonnel } from './personnel'
 export interface TVideo {
   description?: string | ReactNode
   hideControls?: boolean
-  imageSrc: string
+  imageSrc?: string
   personnel?: TPersonnel[]
   subTitle?: string
   title: string
