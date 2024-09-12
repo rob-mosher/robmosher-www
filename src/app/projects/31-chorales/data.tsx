@@ -45,7 +45,7 @@ export const thirtyOneChorales: TAlbum = {
   ],
   vendors: [
     {
-      href: 'https://itunes.apple.com/us/album/31-chorales/id482767091',
+      href: 'https://music.apple.com/us/album/31-chorales/482767091',
       icon: <AppleMusicIcon />,
       text: 'Buy Album',
     },

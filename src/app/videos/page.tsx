@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Section, Video, Button } from '@components'
+import { Section, Video } from '@components'
 import {
   aroundTheBend, concertoForOboe, meetTheMusic, rangosTango, whoIsTheCutest,
 } from '@data'
@@ -22,14 +22,7 @@ const Videos = () => (
       <Video video={whoIsTheCutest} />
     </Section>
     <Section theme='bright'>
-      <Video video={rangosTango}>
-        <Button className='mt-9'>
-          View Project
-        </Button>
-        <Button className='mt-9'>
-          Buy Album
-        </Button>
-      </Video>
+      <Video video={rangosTango} />
     </Section>
     <Section>
       <Video video={meetTheMusic} />

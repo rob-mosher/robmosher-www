@@ -74,7 +74,7 @@ export const Video = ({
       swapPositions ? 'md:flex-row-reverse' : 'md:flex-row',
     )}
     >
-      <div className='flex size-full flex-[65%]'>
+      <div className='flex size-full md:flex-[65%]'>
         <div className='relative w-full' style={{ paddingBottom: `${(9 / 16) * 100}%` }}>
           {isMounted ? (
             <ReactPlayer
@@ -88,7 +88,7 @@ export const Video = ({
           )}
         </div>
       </div>
-      <div className='flex-[35%]'>
+      <div className='md:flex-[35%]'>
         <Heading as='h2'>
           {video.title}
         </Heading>

@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import type { TPersonnel } from './personnel'
 
 interface TImage {
   height?: number
@@ -20,6 +21,7 @@ export interface TAlbumTrack {
 export interface TAlbum {
   description?: string | ReactNode
   image: TImage
+  personnel?: TPersonnel[]
   title: string
   tracks?: TAlbumTrack[]
   vendors?: TVendor[]

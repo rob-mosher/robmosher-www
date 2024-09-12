@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import {
-  Album,
-  Heading, Quote, Section, Video,
+  Album, Heading, Quote, Section, Video,
 } from '@components'
 import { meetTheMusic } from '@data'
 import { getPageTitle } from '@lib'

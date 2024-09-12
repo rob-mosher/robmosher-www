@@ -5,6 +5,7 @@ import type { TAlbum } from '@types'
 import { AudioPlayer } from './AudioPlayer'
 import { Button } from './Button'
 import { Heading } from './Heading'
+import { Personnel } from './Personnel'
 
 export const Album = ({
   addAlbumBorder = false,
@@ -35,9 +36,13 @@ export const Album = ({
     ))
   }
 
+  const personnelJSX = album.personnel
+    ? <Personnel list={album.personnel} />
+    : null
+
   return (
     <div className='flex flex-col gap-9 md:flex-row-reverse'>
-      <div className='flex flex-[50%] flex-col items-center gap-4 lg:flex-[40%]'>
+      <div className='flex flex-col items-center gap-4 md:flex-[50%] lg:flex-[40%]'>
         <div className={mergeClassName(
           'relative h-0 w-full pb-[100%]',
           addAlbumBorder && 'border-2 border-black/10',
@@ -53,11 +58,12 @@ export const Album = ({
         <div>{renderVendors()}</div>
       </div>
 
-      <div className='flex flex-[50%] flex-col gap-4 lg:flex-[60%]'>
+      <div className='flex flex-col gap-4 md:flex-[50%] lg:flex-[60%]'>
         {!hideTitle && (
           <Heading>{album.title}</Heading>
         )}
         {album.description}
+        {personnelJSX}
         {children}
         {album.tracks && (
           <div className='space-y-4'>

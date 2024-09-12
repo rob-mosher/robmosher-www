@@ -43,4 +43,34 @@ export const projects: TProject[] = [
     src: '/images/projects/31-chorales.jpg',
     title: '31 Chorales',
   },
+  {
+    href: '/projects/trickle',
+    src: '/images/projects/trickle.jpg',
+    title: 'Trickle',
+  },
+  {
+    href: '/projects/studies',
+    src: '/images/projects/studies.png',
+    title: 'Studies',
+  },
+  {
+    href: '/projects/who-is-the-cutest',
+    src: '/images/projects/who-is-the-cutest.jpg',
+    title: 'Who is the Cutest?',
+  },
+  {
+    href: '/projects/443-elevatr',
+    src: '/images/projects/443elevatr.jpg',
+    title: '444-ELEVATR',
+  },
+  {
+    href: '/projects/crescendo',
+    src: '/images/projects/crescendo.png',
+    title: 'The Crescendo',
+  },
+  {
+    href: '/projects/is-it-caturday',
+    src: '/images/projects/is-it-caturday.jpg',
+    title: 'Is it Caturday?',
+  },
 ]

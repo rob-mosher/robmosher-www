@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        fourFourThreeElevatr: 'url("/images/443elevatr-bg.jpg")',
         radialGradient: 'radial-gradient(var(--tw-gradient-stops))',
         polebridge: 'url("/images/polebridge-map.jpg")',
         robMosher: 'url("/images/robmosher-antonelli-pan-armonica.jpg")',
