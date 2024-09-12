@@ -25,7 +25,7 @@ export const Button = ({
   return (
     <button
       className={mergeClassName(
-        'rounded bg-bright px-6 py-3 text-white uppercase font-title text-2xl tracking-wider hover:opacity-75',
+        'rounded bg-bright px-6 py-3 text-white uppercase font-title text-1.5xl md:text-2xl tracking-wider hover:opacity-75',
         className,
       )}
       type='button'

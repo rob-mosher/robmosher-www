@@ -39,7 +39,7 @@ export const Section = ({
         elementTag,
         {
           className: mergeClassName(
-            'flex flex-col w-full max-w-layout px-6 py-24 md:px-12',
+            'flex flex-col w-full max-w-layout px-6 py-12 md:py-24 md:px-12',
             className,
           ),
         },

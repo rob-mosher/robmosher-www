@@ -25,13 +25,13 @@ export const Header = () => {
   const isActive = (path: string) => matchesBasePath(path, pathName)
 
   return (
-    <Section as='header' outerClassName='bg-white border border-b-gray-120' className='py-4'>
+    <Section as='header' outerClassName='bg-white border border-b-gray-120' className='py-3 md:py-4'>
       <Disclosure>
         {({ open }) => (
           <>
             {/* Main Header Section */}
             <div className='flex items-center justify-between'>
-              <Heading noShrink as='h1'>
+              <Heading noShrink as='h1' className='mb-0 text-4xl md:text-5xl'>
                 <Link href='/' className='tracking-wider' scroll>
                   Rob Mosher
                 </Link>

@@ -24,8 +24,8 @@ const Home = () => {
     <>
       <Section outerClassName='relative bg-[url("/images/robmosher-antonelli-pan-armonica.jpg")] bg-center bg-cover h-[70vh] shadow-inner'>
         <div className='absolute inset-0 z-10 bg-gradient-radial from-black/15 via-black/20 to-black/50' />
-        <div className='z-50 flex h-full flex-col items-start justify-end gap-9'>
-          <p className='z-50 flex text-2xl text-white'>Composer, Woodwinds, & Technology</p>
+        <div className='z-50 flex h-full flex-col items-start justify-end gap-4 md:gap-9'>
+          <p className='z-50 flex text-1.5xl text-white md:text-2xl'>Composer, Woodwinds, & Technology</p>
           <Button href='/new' className='shadow-2xl'>
             New Releases
           </Button>
