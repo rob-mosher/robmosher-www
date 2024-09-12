@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const ThirtyOneChorales = () => (
   <>
     <Section outerClassName='relative'>
-      <div className='absolute inset-0 bg-31-chorales bg-cover bg-center bg-no-repeat opacity-50' />
+      <div className='absolute inset-0 bg-thirtyOneChorales bg-cover bg-center bg-no-repeat opacity-50' />
       <Heading className='z-50 flex justify-center py-12 text-6xl'>
         31 Chorales
       </Heading>
