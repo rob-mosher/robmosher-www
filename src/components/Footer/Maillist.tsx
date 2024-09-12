@@ -1,25 +1,16 @@
-/* eslint-disable max-len */
 import { Button } from '../Button'
 import { Heading } from '../Heading'
 
+const emailSubscribeUrl = process.env.NEXT_PUBLIC_EMAIL_SUBSRIBE_URL
+
 export const Maillist = () => {
   const signupForm = (
-    <form
-      id='sib-form'
-      method='POST'
-      // action=''
-      className='mt-6 flex flex-col flex-wrap justify-center gap-4 text-gray-900 md:flex-row'
+    <Button
+      className='mt-4 w-64 bg-bright px-3 py-4 text-white'
+      href={emailSubscribeUrl}
     >
-      <input className='w-64 rounded px-3 py-4' placeholder='Email' type='text' id='EMAIL' name='EMAIL' data-required='true' required />
-      <input className='w-64 rounded px-3 py-4' placeholder='First Name' type='text' id='FIRSTNAME' name='FIRSTNAME' />
-      <input className='w-64 rounded px-3 py-4' placeholder='Last Name' type='text' id='LASTNAME' name='LASTNAME' />
-      {/* <input type='text' name='email_address_check' value='' /> */}
-      <input type='hidden' name='locale' value='en' />
-      <input type='hidden' name='html_type' value='simple' />
-      <Button className='w-64 bg-bright px-3 py-4 text-white'>
-        Sign Me Up
-      </Button>
-    </form>
+      Sign Me Up
+    </Button>
   )
 
   return (
