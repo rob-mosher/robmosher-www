@@ -6,6 +6,8 @@ import { Footer, Header } from '@components'
 import { defaultPageTitle, defaultMetaDescription } from '@lib'
 import './globals.css'
 
+const gtmId = process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string
+
 const oswald = Oswald({
   subsets: ['latin'],
   variable: '--font-oswald',
@@ -29,7 +31,11 @@ const RootLayout = ({
     children: TReactNode;
   }>) => (
     <html lang='en'>
-      <GoogleTagManager gtmId='G-2TXJE0LVNN' />
+      {/* Next.js documentation has several recommendations for where to place GoogleTagManager  */}
+      <GoogleTagManager gtmId={gtmId} />
+      <head>
+        <link rel='icon' href='/favicon.png' type='image/png' sizes='32x32' />
+      </head>
       <body className={`font-sans font-extralight ${oswald.variable} ${poppins.variable}`}>
         <div className='flex size-full min-h-screen flex-col'>
           <Header />
