@@ -1,5 +1,6 @@
 import type { ReactNode as TReactNode } from 'react'
 import { mergeClassName } from '@lib'
+import type { THeadingLevel } from '@types'
 
 const headingStyles = {
   h1: 'text-5xl',
@@ -17,7 +18,7 @@ export const Heading = ({
   noShrink = false,
   uppercase = true,
 }: {
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  as?: THeadingLevel
   children: TReactNode
   className?: string
   noShrink?: boolean

@@ -1,6 +1,7 @@
 export * from './album'
 export * from './blogItem'
 export * from './gallery'
+export * from './headingLevel'
 export * from './nav'
 export * from './personnel'
 export * from './project'

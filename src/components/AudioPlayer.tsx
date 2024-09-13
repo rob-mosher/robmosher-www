@@ -65,6 +65,7 @@ export const AudioPlayer = ({ tracks }: {
             type='button'
             className='mr-4 text-xl text-gray-700'
             onClick={() => handlePlay(track)}
+            aria-label={currentTrack === track.src ? 'Pause' : 'Play'}
           >
             {currentTrack === track.src
               ? <PauseIcon className='size-6' />
@@ -79,11 +80,7 @@ export const AudioPlayer = ({ tracks }: {
             </div>
             {currentTrack === track.src && (
               <span className='text-sm'>
-                {formatTime(currentTime)}
-                {' '}
-                /
-                {' '}
-                {formatTime(duration)}
+                {`${formatTime(currentTime)} / ${formatTime(duration)}`}
               </span>
             )}
           </div>
