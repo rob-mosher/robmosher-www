@@ -1,3 +1,4 @@
+import { GoogleTagManager } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 import { Oswald, Poppins } from 'next/font/google'
 import type { ReactNode as TReactNode } from 'react'
@@ -28,6 +29,7 @@ const RootLayout = ({
     children: TReactNode;
   }>) => (
     <html lang='en'>
+      <GoogleTagManager gtmId='G-2TXJE0LVNN' />
       <body className={`font-sans font-extralight ${oswald.variable} ${poppins.variable}`}>
         <div className='flex size-full min-h-screen flex-col'>
           <Header />

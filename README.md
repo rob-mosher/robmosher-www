@@ -8,3 +8,4 @@
 ## TODOs
 
 - Ensure `italic` utility class can change font to italics
+- Add forward from /socials to socials.robmosher.com
