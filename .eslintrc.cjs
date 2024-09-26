@@ -4,22 +4,25 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
-    jest: true
+    jest: true,
   },
   extends: [
-    'next',
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'airbnb',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
+    'eslint:recommended',
+    'next',
     'plugin:tailwindcss/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:import/typescript',
+    'plugin:import/warnings',
+    'plugin:import/errors',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: [
+    'dist',
+    '.eslintrc.cjs',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -35,40 +38,43 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.ts", "*.tsx"],
+      files: ['*.ts', '*.tsx'],
       rules: {
-        "react/require-default-props": "off"
-      }
-    }
+        'react/require-default-props': 'off',
+      },
+    },
   ],
-  plugins: ['react-refresh'],
+  plugins: [
+    'react-refresh',
+    '@typescript-eslint',
+  ],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
     'import/extensions': 'off',
     'import/order': [
       'warn',
       {
-        'groups': [
+        groups: [
           'external',
           'builtin',
           'internal',
           'sibling',
           'parent',
-          'index'
+          'index',
         ],
         'newlines-between': 'never',
-        'alphabetize': {
-          'order': 'asc',
-          'caseInsensitive': false
-        }
-      }
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false,
+        },
+      },
     ],
     'import/prefer-default-export': 'off',
     'jsx-a11y/label-has-associated-control': 'warn',
-    "jsx-a11y/media-has-caption": [ 'warn', {
-      "audio": [ "Audio" ],
-      "video": [ "Video" ],
-      "track": [ "Track" ],
+    'jsx-a11y/media-has-caption': ['warn', {
+      audio: ['Audio'],
+      video: ['Video'],
+      track: ['Track'],
     }],
     'jsx-quotes': ['error', 'prefer-single'],
     'max-len': 'warn',
@@ -88,6 +94,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
     'react-refresh/only-export-components': 'off',
-    'semi': ['warn', 'never'],
+    semi: ['warn', 'never'],
   },
-};
+}
