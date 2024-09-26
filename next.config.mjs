@@ -43,6 +43,16 @@ const nextConfig = {
     NEXT_PUBLIC_EMAIL_SUBSRIBE_URL: process.env.NEXT_PUBLIC_EMAIL_SUBSRIBE_URL,
     NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID,
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/projects/tilt-refrain',
+        destination: '/projects/studies',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig
