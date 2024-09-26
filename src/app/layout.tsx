@@ -1,4 +1,4 @@
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 import { Oswald, Poppins } from 'next/font/google'
 import type { ReactNode as TReactNode } from 'react'
@@ -6,7 +6,7 @@ import { Footer, Header } from '@components'
 import { defaultPageTitle, defaultMetaDescription } from '@lib'
 import './globals.css'
 
-const gtmId = process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string
+const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as string
 
 const oswald = Oswald({
   subsets: ['latin'],
@@ -31,8 +31,6 @@ const RootLayout = ({
     children: TReactNode;
   }>) => (
     <html lang='en'>
-      {/* Next.js documentation has several recommendations for where to place GoogleTagManager  */}
-      <GoogleTagManager gtmId={gtmId} />
       <head>
         <link rel='icon' href='/favicon.png' type='image/png' sizes='32x32' />
       </head>
@@ -45,6 +43,7 @@ const RootLayout = ({
           <Footer />
         </div>
       </body>
+      <GoogleAnalytics gaId={gaId} />
     </html>
 )
 

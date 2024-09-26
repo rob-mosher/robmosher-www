@@ -28,8 +28,8 @@ if (!process.env.NEXT_PUBLIC_EMAIL_SUBSRIBE_URL) {
   throw new Error('Missing environment variable: NEXT_PUBLIC_EMAIL_SUBSRIBE_URL')
 }
 
-if (!process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID) {
-  throw new Error('Missing environment variable: NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID')
+if (!process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID) {
+  throw new Error('Missing environment variable: NEXT_PUBLIC_GOOGLE_ANALYTICS_ID')
 }
 
 const nextConfig = {
@@ -41,7 +41,7 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_CDN_HOST: process.env.NEXT_PUBLIC_CDN_HOST,
     NEXT_PUBLIC_EMAIL_SUBSRIBE_URL: process.env.NEXT_PUBLIC_EMAIL_SUBSRIBE_URL,
-    NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID,
+    NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID,
   },
 }
 
