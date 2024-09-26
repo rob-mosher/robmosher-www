@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Oswald, Poppins } from 'next/font/google'
 import type { ReactNode as TReactNode } from 'react'
 import { Footer, Header } from '@components'
-import { defaultPageTitle, defaultMetaDescription } from '@lib'
+import { defaultPageTitle, defaultMetaDescription, WebVitalsReporter } from '@lib'
 import './globals.css'
 
 const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as string
@@ -42,6 +42,7 @@ const RootLayout = ({
           </main>
           <Footer />
         </div>
+        <WebVitalsReporter />
       </body>
       <GoogleAnalytics gaId={gaId} />
     </html>
