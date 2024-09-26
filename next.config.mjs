@@ -47,6 +47,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/projects/443-elevatr',
+        destination: '/projects/443-ele-vatr',
+        permanent: true,
+      },
+      {
         source: '/projects/tilt-refrain',
         destination: '/projects/studies',
         permanent: true,

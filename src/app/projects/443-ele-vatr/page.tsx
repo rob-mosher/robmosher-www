@@ -3,7 +3,7 @@ import { Button, Section } from '@components'
 import { getPageTitle } from '@lib'
 
 export const metadata: Metadata = {
-  title: getPageTitle('443-ELEVATR'),
+  title: getPageTitle('443-ELE-VATR'),
   description: 'Telephone number album 443-ELE-VATR',
 }
 

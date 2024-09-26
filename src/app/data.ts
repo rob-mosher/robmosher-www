@@ -61,7 +61,7 @@ export const projects: TProject[] = [
   {
     href: '/projects/443-elevatr',
     src: '/images/projects/443elevatr.jpg',
-    title: '444-ELEVATR',
+    title: '443-ELE-VATR',
   },
   {
     href: '/projects/crescendo',
