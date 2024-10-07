@@ -9,12 +9,8 @@ import { navItems } from './data'
 import { Heading } from '../Heading'
 import { Section } from '../Section'
 
+// eslint-disable-next-line arrow-body-style
 const matchesBasePath = (path: string, pathName: string): boolean => {
-  // Exact root `/` match or treat `/projects` as equivalent to `/`
-  if (path === '/' && (pathName === '/' || pathName.startsWith('/projects'))) {
-    return true
-  }
-
   // Exact match or sub-path match (e.g., `/new/foo-bar` matches `/new`)
   return path === pathName || pathName.startsWith(`${path}/`)
 }

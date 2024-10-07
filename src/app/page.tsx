@@ -1,50 +1,25 @@
 import type { Metadata } from 'next'
-import {
-  Button, Heading, Project, Section,
-} from '@components'
+import { Button, Section } from '@components'
 import { defaultPageTitleHomepage } from '@lib'
-import { projects } from './data'
 
 export const metadata: Metadata = {
   title: defaultPageTitleHomepage,
 }
 
-const Home = () => {
-  const projectsJSX = projects.map((project) => (
-    <Project
-      key={project.href}
-      linkClassName='hover:opacity-75 transition-opacity duration-200'
-      href={project.href}
-      src={project.src}
-      title={project.title}
-    />
-  ))
-
-  return (
-    <>
-      <Section outerClassName='relative bg-robMosher bg-center bg-cover h-[70vh] shadow-inner'>
-        <div className='absolute inset-0 z-10 bg-radialGradient from-black/15 via-black/20 to-black/50' />
-        <div className='z-50 flex h-full flex-col items-start justify-end gap-4 md:gap-9'>
-          <p className='z-50 flex text-1.5xl text-white md:text-2xl'>Composer, Woodwinds, & Technology</p>
-          <Button href='/new' className='shadow-2xl'>
-            New Releases
-          </Button>
-        </div>
-      </Section>
-      <Section outerClassName='bg-white' className='py-12'>
-        <div className='flex flex-col md:flex-row'>
-          <Heading className='flex-[40%]' as='h1'>About</Heading>
-          <p className='mt-4 flex-[60%] leading-[1.85] text-gray-700 md:mt-0'>
-            These projects represent the care, craft, and ridiculousness I love to bring to everything I do. I believe that inspiration, coupled with dedication and freedom from ego, lead to an endless, inevitable reshuffling, shaped by the beauty of limitation. The exploration of Science and Art is a privilege and duty that we collectively explore and share together.
-          </p>
-        </div>
-      </Section>
-      <Section outerClassName='bg-gray-200'>
-        <div className='grid w-full grid-cols-1 gap-x-0 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-          {projectsJSX}
-        </div>
-      </Section>
-    </>
-  )
-}
+const Home = () => (
+  <Section outerClassName='relative bg-robMosher bg-center bg-cover h-[75vh] shadow-inner'>
+    <div className='absolute inset-0 z-10 bg-radialGradient from-black/15 via-black/20 to-black/50' />
+    <div className='z-50 flex h-full flex-col items-start justify-end gap-4 md:gap-9'>
+      <p className='z-50 flex text-1.5xl text-white md:text-2xl'>Composer, Woodwinds, & Technology</p>
+      <div className='flex flex-col gap-4 sm:flex-row'>
+        <Button href='/new' className='shadow-2xl'>
+          New Releases
+        </Button>
+        <Button href='/projects' className='shadow-2xl'>
+          Projects
+        </Button>
+      </div>
+    </div>
+  </Section>
+)
 export default Home

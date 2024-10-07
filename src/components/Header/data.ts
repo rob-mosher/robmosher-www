@@ -2,11 +2,15 @@ import type { TNav } from '@types'
 
 export const navItems: TNav[] = [
   {
+    href: '/',
+    title: 'Home',
+  },
+  {
     href: '/new',
     title: 'New',
   },
   {
-    href: '/',
+    href: '/projects',
     title: 'Projects',
   },
   {
