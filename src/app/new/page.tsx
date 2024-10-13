@@ -10,6 +10,7 @@ import {
   pancakeDaydreamsBlog,
   robotMeditations1Blog,
   robotMeditations2Blog,
+  robotMeditations3Blog,
   thinkersLullabyBlog,
   twoMinuteWaltzBlog,
   watchOutForTheMoonlightBlog,
@@ -19,12 +20,13 @@ import { getPageTitle } from '@lib'
 import type { TBlogItem } from '@types'
 
 export const metadata: Metadata = {
-  title: getPageTitle('New'),
+  title: getPageTitle('New Releases'),
   description: 'Recently released videos and projects',
 }
 
 // Newer blog entries on top.
 const blogRoll: TBlogItem[] = [
+  robotMeditations3Blog,
   battleBoyBlog,
   cookieJarParadeBlog,
   cavernsBlog,

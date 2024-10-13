@@ -8,6 +8,9 @@ const getThemeClassName = (theme: TTheme) => {
     case 'bright':
       return 'bg-bright text-white'
 
+    case 'darkest':
+      return 'bg-black text-white'
+
     default:
       return 'bg-white text-black'
   }
@@ -30,7 +33,7 @@ export const Section = ({
 
   return (
     <div className={mergeClassName(
-      'flex w-full justify-center',
+      'flex w-full justify-center flex-grow',
       getThemeClassName(theme),
       outerClassName,
     )}
