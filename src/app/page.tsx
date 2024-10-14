@@ -22,4 +22,5 @@ const Home = () => (
     </div>
   </Section>
 )
+
 export default Home
