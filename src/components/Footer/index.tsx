@@ -4,7 +4,7 @@ import { SocialMedia } from './SocialMedia'
 import { Section } from '../Section'
 
 export const Footer = () => (
-  <Section as='footer' outerClassName='bg-stone-800' className='flex flex-col gap-16 py-16 text-white'>
+  <Section as='footer' outerClassName='bg-stone-800' className='flex flex-col gap-14 py-8 text-white md:gap-16 md:py-12'>
     <SocialMedia />
     <Maillist />
     <Credits />
