@@ -57,8 +57,12 @@ export const Header = () => {
                       href={navItem.href}
                       className={mergeClassName(
                         'py-1 text-gray-500',
+                        // For visual consistency, always include a transparent bottom border.
+                        // (required after adding 'home' icon)
+                        'border-b-2 border-transparent',
                         isActive(navItem.href)
-                          ? 'border-b-2 border-black text-black'
+                          // Overwrite the active element's border from transparent to visible.
+                          ? 'border-black text-black'
                           : 'hover:text-black',
                       )}
                     >
