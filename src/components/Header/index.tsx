@@ -82,7 +82,7 @@ export const Header = () => {
                     as={Link}
                     href={navItem.href}
                     className={mergeClassName(
-                      'block w-full text-center rounded px-3 py-6 text-1.5xl tracking-wide font-title uppercase',
+                      'block w-full text-center rounded px-3 py-5 text-2xl tracking-wide font-title uppercase',
                       isActive(navItem.href)
                         ? 'bg-bright text-white'
                         : 'text-gray-700 hover:bg-gray-300 hover:text-black',

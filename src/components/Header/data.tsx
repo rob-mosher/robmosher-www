@@ -4,7 +4,8 @@ import type { TNav } from '@types'
 export const navItems: TNav[] = [
   {
     href: '/',
-    title: <HomeIcon className='relative top-0.5 inline-block size-5 align-baseline' />,
+    // `md` breakpoint is for desktop navtigation. Everything smaller is for mobile navigation.
+    title: <HomeIcon className='relative top-0.5 inline-block size-6 align-baseline md:size-5' />,
   },
   {
     href: '/new',
