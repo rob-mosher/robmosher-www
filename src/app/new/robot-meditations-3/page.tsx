@@ -4,7 +4,7 @@ import { robotMeditations3, robotMeditations3Blog } from '@data'
 import { getPageTitle } from '@lib'
 
 export const metadata: Metadata = {
-  title: getPageTitle('Robot Meditations #2'),
+  title: getPageTitle('Robot Meditations #3'),
   description: 'Music and video for synthesizer',
 }
 
