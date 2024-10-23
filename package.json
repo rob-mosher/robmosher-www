@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "npm run clean && next build",
+    "build:vercel": "npm run check:types && npm run test && next build",
     "check:types": "npx tsc --noEmit --skipLibCheck",
     "clean": "rimraf .next out",
     "dev": "next dev",
