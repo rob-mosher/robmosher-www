@@ -37,6 +37,21 @@ export const LinkedInIcon = () => (
   </svg>
 )
 
+export const Wellfound = () => (
+  <svg
+    width='32'
+    height='32'
+    fill='currentColor'
+    viewBox='150 150 560 300'
+    xmlns='http://www.w3.org/2000/svg'
+    style={{ transform: 'scale(1.2) translateY(2px)' }}
+  >
+    <path d='M238.6,419.8l-80.9-260.6h75.3l47.7,187.4,51.9-187.4h75.5l51.9,187.4,47.7-187.4h75.3l-81.8,260.6h-80.2l-50.6-188.2-51.6,188.2h-80.2Z' />
+    <circle cx='668.8' cy='379.1' r='43.8' />
+    <circle cx='668.8' cy='200' r='43.8' />
+  </svg>
+)
+
 export const YouTubeIcon = () => (
   // !Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
   <svg

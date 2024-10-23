@@ -1,5 +1,5 @@
 import {
-  FacebookIcon, GitHubIcon, LinkedInIcon, YouTubeIcon,
+  FacebookIcon, GitHubIcon, LinkedInIcon, Wellfound, YouTubeIcon,
 } from '@assets'
 import type { TSocialMedia } from '../../types/socialMedia'
 
@@ -23,5 +23,10 @@ export const socialMediaItems: TSocialMedia[] = [
     ariaLabel: 'LinkedIn Profile',
     href: 'http://linkedin.com/in/rob-mosher-it',
     logo: <LinkedInIcon />,
+  },
+  {
+    ariaLabel: 'Wellfound Profile',
+    href: 'https://wellfound.com/u/robmosher',
+    logo: <Wellfound />,
   },
 ]
