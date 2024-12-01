@@ -38,7 +38,7 @@ const Projects = () => {
             , and
             {' '}
             <span className='font-medium'>
-              ridiculousness
+              curiosity
             </span>
             {' '}
             I bring to the things I love doing. I believe that inspiration, coupled with dedication and freedom from ego, lead to an endless, inevitable reshuffling, shaped by the beauty of limitation. The exploration of Science and Art is a privilege and duty that we collectively explore and share together.
