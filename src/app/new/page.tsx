@@ -20,8 +20,8 @@ import { getPageTitle } from '@lib'
 import type { TBlogItem } from '@types'
 
 export const metadata: Metadata = {
-  title: getPageTitle('New Releases'),
-  description: 'Recently released videos and projects',
+  title: getPageTitle('New'),
+  description: 'Recently released videos, projects, appearances, and more',
 }
 
 // Newer blog entries on top.

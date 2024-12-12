@@ -13,7 +13,7 @@ const Home = () => (
       <p className='z-50 flex text-1.5xl text-white md:text-2xl'>Composer, Woodwinds, Technology, & Advocate</p>
       <div className='flex flex-col gap-4 sm:flex-row'>
         <Button href='/new' className='shadow-2xl'>
-          New Releases
+          New
         </Button>
         <Button href='/projects' className='shadow-2xl'>
           Projects
