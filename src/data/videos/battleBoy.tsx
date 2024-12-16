@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import type { TBlogItem, TVideo } from '@types'
+import type { TVideoBlogItem, TVideo } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -23,7 +23,7 @@ export const battleBoy: TVideo = {
   videoUrl: 'https://www.youtube.com/watch?v=wiO1Hczb5Hs',
 }
 
-export const battleBoyBlog: TBlogItem = {
+export const battleBoyBlog: TVideoBlogItem = {
   date: 'June 3rd, 2024',
   slug: 'battle-boy',
   video: battleBoy,

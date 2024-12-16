@@ -6,6 +6,7 @@ import {
   bigTopBlog,
   cavernsBlog,
   cookieJarParadeBlog,
+  industryTacticsEpisode188Blog,
   mrHauntingtropeBlog,
   pancakeDaydreamsBlog,
   robotMeditations1Blog,
@@ -17,7 +18,7 @@ import {
   winterCarouselBlog,
 } from '@data'
 import { getPageTitle } from '@lib'
-import type { TBlogItem } from '@types'
+import type { TPodcastBlogItem, TVideoBlogItem } from '@types'
 
 export const metadata: Metadata = {
   title: getPageTitle('New'),
@@ -25,7 +26,8 @@ export const metadata: Metadata = {
 }
 
 // Newer blog entries on top.
-const blogRoll: TBlogItem[] = [
+const blogRoll: (TPodcastBlogItem | TVideoBlogItem)[] = [
+  industryTacticsEpisode188Blog,
   robotMeditations3Blog,
   battleBoyBlog,
   cookieJarParadeBlog,

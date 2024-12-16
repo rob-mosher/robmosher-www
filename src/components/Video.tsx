@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player'
 import type { ReactPlayerProps as TReactPlayerProps } from 'react-player'
 import { mergeClassName } from '@lib'
-import type { TVideo, TBlogItem } from '@types'
+import type { TVideo, TVideoBlogItem } from '@types'
 import { Heading } from './Heading'
 import { Loader } from './Loader'
 import { Personnel } from './Personnel'
@@ -24,7 +24,7 @@ export const Video = ({
   video,
 }: {
   children?: TReactNode
-  date?: TBlogItem['date']
+  date?: TVideoBlogItem['date']
   swapPositions?: boolean
   video: TVideo
 }) => {

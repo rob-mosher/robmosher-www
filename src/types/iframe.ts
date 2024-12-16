@@ -1,13 +1,12 @@
 import { ReactNode } from 'react'
 import type { TPersonnel } from './personnel'
 
-export interface TVideo {
+export interface TIframe {
   description?: string | ReactNode
-  hideControls?: boolean
   imageSrc?: string
+  iframeSrc: string
   personnel?: TPersonnel[]
   subTitle?: string
   summary?: string
   title: string
-  videoUrl: string
 }

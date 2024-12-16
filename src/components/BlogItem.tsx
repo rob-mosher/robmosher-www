@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { mergeClassName } from '@lib'
-import type { TTheme, TBlogItem } from '@types'
+import type { TTheme, TPodcastBlogItem, TVideoBlogItem } from '@types'
 import { Heading } from './Heading'
 import { Section } from './Section'
 
@@ -13,11 +13,14 @@ export const BlogItem = ({
   blog,
   theme,
 }: {
-  blog: TBlogItem
+  blog: TPodcastBlogItem | TVideoBlogItem
   theme?: TTheme
 }) => {
   const router = useRouter()
   const blogPath = blog.slug ? `/new/${blog.slug}` : '#'
+  const isVideo = 'video' in blog
+  const media = isVideo ? blog.video : blog.podcast
+  const { imageSrc } = media
 
   const handleClick = () => {
     window.scrollTo(0, 0)
@@ -36,16 +39,16 @@ export const BlogItem = ({
     <Section
       className={mergeClassName(
         'flex flex-col gap-9 py-9',
-        blog.video.imageSrc && 'md:flex-row-reverse',
+        imageSrc && 'md:flex-row-reverse',
       )}
       theme={theme}
     >
-      {blog.video.imageSrc && (
+      {imageSrc && (
         <div className='flex-[50%]'>
           <Image
-            alt={`View page for ${blog.video.title}`}
+            alt={`View page for ${media.title}`}
             className='w-full cursor-pointer hover:opacity-75'
-            src={blog.video.imageSrc}
+            src={imageSrc}
             width={450}
             height={800}
             onClick={handleClick}
@@ -54,7 +57,7 @@ export const BlogItem = ({
       )}
       <div className={mergeClassName(
         'flex flex-col',
-        blog.video.imageSrc && 'flex-[50%]',
+        imageSrc && 'flex-[50%]',
       )}
       >
         <Heading>
@@ -63,12 +66,14 @@ export const BlogItem = ({
             href={blogPath}
             scroll
           >
-            {blog.video.title}
+            {media.title}
           </Link>
         </Heading>
         {date}
         <p className='mt-4 text-lg'>
-          {blog.video.subTitle && `${blog.video.subTitle}.`}
+          {media.subTitle && `${media.subTitle}.`}
+          {media.subTitle && <br />}
+          {media.summary && `${media.summary}`}
         </p>
         <Link
           className='mt-9 tracking-wide underline hover:opacity-75'
