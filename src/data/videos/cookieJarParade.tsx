@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import type { TBlogItem, TVideo } from '@types'
+import type { TVideo, TBlogItem } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -23,5 +23,6 @@ export const cookieJarParade: TVideo = {
 export const cookieJarParadeBlog: TBlogItem = {
   date: 'May 29th, 2024',
   slug: 'cookie-jar-parade',
-  video: cookieJarParade,
+  type: 'video',
+  media: cookieJarParade,
 }

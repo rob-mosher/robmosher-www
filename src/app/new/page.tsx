@@ -6,6 +6,7 @@ import {
   bigTopBlog,
   cavernsBlog,
   cookieJarParadeBlog,
+  industryTacticsEpisode188Blog,
   mrHauntingtropeBlog,
   pancakeDaydreamsBlog,
   robotMeditations1Blog,
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
 
 // Newer blog entries on top.
 const blogRoll: TBlogItem[] = [
+  industryTacticsEpisode188Blog,
   robotMeditations3Blog,
   battleBoyBlog,
   cookieJarParadeBlog,
@@ -47,12 +49,10 @@ const New = () => {
     <BlogItem
       key={blog.slug}
       blog={blog}
-      // Alternate between themes (aka zebra striping)
       theme={index % 2 === 0 ? 'bright' : undefined}
     />
   ))
 
-  // Semantic `section`s are handled within each blog preview.
   return (
     <div>
       {blogRollJSX}

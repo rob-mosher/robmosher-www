@@ -26,5 +26,6 @@ export const battleBoy: TVideo = {
 export const battleBoyBlog: TBlogItem = {
   date: 'June 3rd, 2024',
   slug: 'battle-boy',
-  video: battleBoy,
+  type: 'video',
+  media: battleBoy,
 }

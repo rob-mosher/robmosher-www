@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { Heading } from '@components'
-import type { TBlogItem, TVideo } from '@types'
+import type { TVideo, TBlogItem } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -32,5 +32,6 @@ export const pancakeDaydreams: TVideo = {
 export const pancakeDaydreamsBlog: TBlogItem = {
   date: 'Dec 30th, 2023',
   slug: 'pancake-daydreams',
-  video: pancakeDaydreams,
+  type: 'video',
+  media: pancakeDaydreams,
 }

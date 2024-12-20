@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { rightSingleQuote } from '@lib'
-import type { TBlogItem, TVideo } from '@types'
+import type { TVideo, TBlogItem } from '@types'
 
 const descriptionJSX: ReactNode = (
   <>
@@ -13,7 +13,6 @@ const descriptionJSX: ReactNode = (
     <p className='mt-6 italic'>
       Image created by DALL-E from OpenAI.
     </p>
-
   </>
 )
 
@@ -28,5 +27,6 @@ export const battlesEnd: TVideo = {
 export const battlesEndBlog: TBlogItem = {
   date: 'Jan 16th, 2024',
   slug: 'battles-end',
-  video: battlesEnd,
+  type: 'video',
+  media: battlesEnd,
 }

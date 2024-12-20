@@ -23,5 +23,6 @@ export const robotMeditations3: TVideo = {
 export const robotMeditations3Blog: TBlogItem = {
   date: 'October 13th, 2024',
   slug: 'robot-meditations-3',
-  video: robotMeditations3,
+  type: 'video',
+  media: robotMeditations3,
 }

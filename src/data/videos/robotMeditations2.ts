@@ -1,4 +1,4 @@
-import type { TBlogItem, TVideo } from '@types'
+import type { TVideo, TBlogItem } from '@types'
 
 export const robotMeditations2: TVideo = {
   description: 'Composed, performed, and recorded by Rob Mosher.',
@@ -11,5 +11,6 @@ export const robotMeditations2: TVideo = {
 export const robotMeditations2Blog: TBlogItem = {
   date: 'April 8th, 2024',
   slug: 'robot-meditations-2',
-  video: robotMeditations2,
+  type: 'video',
+  media: robotMeditations2,
 }
