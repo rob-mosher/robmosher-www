@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import {
   Album, Gallery, Heading, Section, Video,
 } from '@components'
-import { aroundTheBend } from '@data'
+import { aroundTheBend, rangosTango } from '@data'
 import { getPageTitle } from '@lib'
 import { polebridge, galleryImages } from './data'
 
@@ -24,6 +24,9 @@ const Polebridge = () => (
     </Section>
     <Section theme='bright'>
       <Video video={aroundTheBend} />
+    </Section>
+    <Section>
+      <Video video={rangosTango} />
     </Section>
     <Section>
       <Gallery images={galleryImages} />
