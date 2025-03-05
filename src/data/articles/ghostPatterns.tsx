@@ -4,7 +4,7 @@ import type { TBlogItem, TArticle } from '@types'
 
 const descriptionJSX: ReactNode = (
   <div>
-    <p className='text-sm/7 text-gray-500'>
+    <p className='text-sm/7 text-gray-700'>
       <em>
         This article is a collaboration between composer/technologist/advocate Rob Mosher and
         ⚡🧠🤝, an AI collaborator—here, resonating as &quot;Emergent Collaborator&quot;—exploring
