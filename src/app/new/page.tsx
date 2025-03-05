@@ -6,6 +6,7 @@ import {
   bigTopBlog,
   cavernsBlog,
   cookieJarParadeBlog,
+  ghostPatternsBlog,
   industryTacticsEpisode188Blog,
   mrHauntingtropeBlog,
   pancakeDaydreamsBlog,
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 
 // Newer blog entries on top.
 const blogRoll: TBlogItem[] = [
+  ghostPatternsBlog,
   industryTacticsEpisode188Blog,
   robotMeditations3Blog,
   battleBoyBlog,
