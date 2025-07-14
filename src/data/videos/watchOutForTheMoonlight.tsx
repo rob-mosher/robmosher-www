@@ -20,7 +20,7 @@ export const watchOutForTheMoonlight: TVideo = {
   imageSrc: '/images/videos/watch-out-for-the-moonlight.png',
   subTitle: 'Chiptune Music for Sega Genesis / Mega Drive',
   title: 'Watch Out for the Moonlight',
-  videoUrl: 'https://www.youtube.com/watch?v=Hs_TlBHVHrs',
+  videoUrl: 'https://www.youtube.com/watch?v=GBPDVF6nhdM',
 }
 
 export const watchOutForTheMoonlightBlog: TBlogItem = {
