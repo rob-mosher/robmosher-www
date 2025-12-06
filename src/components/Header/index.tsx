@@ -9,7 +9,6 @@ import { navItems } from './data'
 import { Heading } from '../Heading'
 import { Section } from '../Section'
 
-// eslint-disable-next-line arrow-body-style
 const matchesBasePath = (path: string, pathName: string): boolean => {
   // Exact match or sub-path match (e.g., `/new/foo-bar` matches `/new`)
   return path === pathName || pathName.startsWith(`${path}/`)
@@ -24,7 +23,10 @@ export const Header = () => {
     <Section as='header' outerClassName='bg-white border border-b-gray-120' className='py-3 md:py-4'>
       <Disclosure>
         {({ open }) => (
-          <>
+          <div>
+            {/* NOTE: Must use a div wrapper instead of Fragment (<>) because Headless UI's Disclosure
+                passes props like `data-headlessui-state` to its children, and React Fragments can
+                only accept `key` and `children` props. */}
             {/* Main Header Section */}
             <div className='flex items-center justify-between'>
               <Heading noShrink as='h1' className='mb-0 text-4xl md:text-5xl'>
@@ -93,7 +95,7 @@ export const Header = () => {
                 ))}
               </div>
             </DisclosurePanel>
-          </>
+          </div>
         )}
       </Disclosure>
     </Section>
