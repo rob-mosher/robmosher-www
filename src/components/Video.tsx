@@ -1,14 +1,13 @@
 // NOTE - ReactPlayer requires client-side rendering, and Next's Image therefore requires the DOM
 // to loaded before rendering the potential thumbnail.
-// TODO account for 'loading'/hydration time
 // TODO video stretching to height of right column in md: size (introduced as part of height fix)
 
 'use client'
 
 import { CalendarIcon } from '@heroicons/react/24/outline'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import type { ReactNode as TReactNode } from 'react'
-import { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player'
 import type { ReactPlayerProps as TReactPlayerProps } from 'react-player'
 import { mergeClassName } from '@lib'
@@ -16,6 +15,11 @@ import type { TBlogItem, TVideo } from '@types'
 import { Heading } from './Heading'
 import { Loader } from './Loader'
 import { Personnel } from './Personnel'
+
+const DynamicReactPlayer = dynamic(() => Promise.resolve(ReactPlayer), {
+  ssr: false,
+  loading: () => <Loader />,
+})
 
 export const Video = ({
   children,
@@ -28,12 +32,6 @@ export const Video = ({
   swapPositions?: boolean
   video: TVideo
 }) => {
-  const [isMounted, setIsMounted] = useState(false)
-
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
-
   const dateJSX = date
     ? (
       <div className='mt-4 flex items-center justify-start gap-2 opacity-40'>
@@ -76,16 +74,12 @@ export const Video = ({
     >
       <div className='flex size-full md:flex-[65%]'>
         <div className='relative w-full' style={{ paddingBottom: `${(9 / 16) * 100}%` }}>
-          {isMounted ? (
-            <ReactPlayer
-              {...reactPlayerProps}
-              className='absolute left-0 top-0'
-              width='100%'
-              height='100%'
-            />
-          ) : (
-            <Loader />
-          )}
+          <DynamicReactPlayer
+            {...reactPlayerProps}
+            className='absolute left-0 top-0'
+            width='100%'
+            height='100%'
+          />
         </div>
       </div>
       <div className='md:flex-[35%]'>
