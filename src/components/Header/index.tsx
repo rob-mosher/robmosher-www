@@ -29,7 +29,7 @@ export const Header = () => {
                 only accept `key` and `children` props. */}
             {/* Main Header Section */}
             <div className='flex items-center justify-between'>
-              <Heading noShrink as='h1' className='mb-0 text-4xl md:text-5xl'>
+              <Heading noShrink as='h1' className='mb-0 text-3xl md:text-4xl'>
                 <Link href='/' className='tracking-wider' scroll>
                   Rob Mosher
                 </Link>
