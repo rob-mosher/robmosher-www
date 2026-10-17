@@ -1,7 +1,7 @@
 import type { Config } from 'jest'
 import { config as loadDotenv } from 'dotenv'
 import { resolve } from 'path'
-import nextJest from 'next/jest'
+import nextJest from 'next/jest.js'
 
 // Load .env.local before nextJest loads next.config.mjs
 // Next.js doesn't automatically load .env.local in test mode, so we do it explicitly
